@@ -162,3 +162,15 @@ than electricity sourced from coal.
 the total CO2 emissions from that trip is stored and when another trip is saved the CO2 emissions from both trips are added together.
 The total emissions from all the user’s trips are shown at the bottom of the users account page with the saved trips.
 ---
+## **Wireframes**
+
+---
+## **Testing**
+
+---
+## **Technology**
+
+---
+## **Credits**
+
+---
