@@ -148,3 +148,17 @@ an accordion of all the text explaining the initiative. Link will be shown at th
 * Right Side : All social media links
 
 ---
+## **Future Features**
+
+1. Show all Shell petrol stations along the visitor’s route as they are the only petrol company in the UK that offsets 
+customers fuel purchases. If another company offers this option, they would be added to the routes.
+
+1. Show the option for electric car and this selection will show all charging stations along the visitor’s route.
+The charging stations will also have a rating for how environmentally friendly the source of the electricity is. 
+If the electricity comes from green energy sources such as wind turbines or Hydroelectricity would have higher ratings
+than electricity sourced from coal. 
+
+1. Offer visitors the option to open their own account. This account will allow them to save their trips. Once a trip is saved
+the total CO2 emissions from that trip is stored and when another trip is saved the CO2 emissions from both trips are added together.
+The total emissions from all the user’s trips are shown at the bottom of the users account page with the saved trips.
+---
