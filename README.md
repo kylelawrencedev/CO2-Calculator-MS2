@@ -99,3 +99,52 @@ with a simple subscription. Millions of people have subscriptions to Amazon and 
 
 * As a user I want the option of Dark and Light mode for the site.
 ---
+## **Features**
+**Home Page Header**
+
+* CO2 Calculator Logo on the left, when clicked will link back to home page.
+
+* Dark and Light mode toggle switch on the right of the header. Lets user switch the color theme from a dark theme to a light theme.
+
+**Calculator Introduction**
+
+A paragraph introducing the calculator with a brief explanation on our impact on the planet.
+
+**CO2 Calculator**
+
+* Left Side : Dropdown menu for the user to select their fuel type, the two options will be petrol and diesel.
+
+* Left Side : Below the fuel type will be a text area that shows the CO2 per mile of the selected fuel.
+
+* Right Side : In line with fuel type will be 'Start Location', the user will input their start location in this area.
+
+* Right Side : Below 'Start Location' will be 'End Location', the user will input where their journey will end.
+
+* Middle : Below these 4 elements will be a 'Submit' button.
+
+**Google Maps**
+
+This will show the Google Directions API, the input from the Start and End locations will be shown here with the route showing. 
+
+**Calculator Results**
+
+* Middle : 'Trip Distance' will be shown below the google maps.
+
+* Middle : 'Total CO2 for Trip' is below 'Trip Distance'. This shows the total CO2 emitted from the trip.
+
+**CO2 Emissions Offsetting Initiatives**
+
+*Desktop :*
+* Left Side : All the logos for selected offsetting initiatives will be shown, the logos when clicked will link to the website.
+
+* Right Side : A description of each initiative, a link will also be shown for the website at the end of the text. 
+
+*Mobile :*
+
+Middle : Logo for each initiative will be shown with a snippet of text shown as a preview. Users will click on an image and it will open.
+an accordion of all the text explaining the initiative. Link will be shown at the end of the text to the website.
+
+**Footer**
+* Right Side : All social media links
+
+---
