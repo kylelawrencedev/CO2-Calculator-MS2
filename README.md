@@ -88,3 +88,14 @@ with a simple subscription. Millions of people have subscriptions to Amazon and 
 
 * Contact Us and Social Links Color - F2F2F2
 ---
+## **User Stories**
+* As a user I want to view a map showing my trip from point A to point B.
+
+* As a user I want to see my CO2 emissions for the given route on the map from point A to point B. 
+
+* As a user I want to have to option to select either petrol or diesel for my cars fuel type.
+
+* As a user I want to have suggested places where I can try and offset my CO2 emissions from my car. 
+
+* As a user I want the option of Dark and Light mode for the site.
+---
