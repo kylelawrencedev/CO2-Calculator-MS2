@@ -7,6 +7,16 @@
 
 
 /*------------------------------------Header*/
+nav {
+    height: 150px;
+    padding: 5px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
 
 
 /*------------------------------------Toggle Switch*/
