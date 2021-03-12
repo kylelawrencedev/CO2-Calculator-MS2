@@ -7,8 +7,11 @@
 
 
 /*------------------------------------Header*/
+header {
+    background-color: #65CCB8;
+}
 nav {
-    height: 150px;
+    height: 160px;
     padding: 5px;
 }
 
@@ -16,7 +19,22 @@ nav {
     width: 150px;
     height: 150px;
 }
-
+.title-1 {
+    font-family: 'B612', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    position: absolute;
+    top: 55px;
+    left: 120px;
+}
+.title-2 {
+    font-family: 'B612', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
 
 
 /*------------------------------------Toggle Switch*/
