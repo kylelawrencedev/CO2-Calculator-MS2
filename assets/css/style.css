@@ -9,6 +9,7 @@
 /*------------------------------------Header*/
 header {
     background-color: #65CCB8;
+    filter: brightness(0.9);
 }
 nav {
     height: 160px;
@@ -56,7 +57,13 @@ nav {
   }
 }
 /*------------------------------------Statement Paragraph*/
-
+.statement-paragraph {
+    font-family: 'B612', sans-serif;
+    color: #f2f2f2;
+    background-color: #182628;
+    padding: 20px 15px;
+    height: 170px;
+}
 
 /*------------------------------------Calculator*/
 
