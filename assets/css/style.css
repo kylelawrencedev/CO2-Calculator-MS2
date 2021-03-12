@@ -20,8 +20,23 @@ nav {
 
 
 /*------------------------------------Toggle Switch*/
-
-
+@media (min-width: 766px) {
+    .toggle-location {
+    position: absolute;
+    top: 75px;
+    left: 90%;
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+}
+@media (max-width: 765px) {
+    .toggle-location{
+    padding-top: 10px;
+    -ms-flex-pack: center !important;
+    -webkit-box-pack: center !important;
+            justify-content: center !important;
+  }
+}
 /*------------------------------------Statement Paragraph*/
 
 
