@@ -67,7 +67,8 @@ nav {
 /*------------------------------------Calculator*/
 .co2-google-maps {
     background-color: #3B945E;
-    height: 500px;
+    filter: brightness(0.9);
+    height: 1000px;
     padding: 20px 15px;
 }
 .co2-calculator-heading {
@@ -105,7 +106,6 @@ nav {
     font-family: 'B612', sans-serif;
     position: relative;
     top: 215px;
-    
 }
 /*------------------------------------Code Taken from bootstrap*/
 .input-group-text {
@@ -146,6 +146,11 @@ nav {
 .custom-select {
     font-size: 1.25rem;
 }
+.custom-select:focus {
+    border-color: #65CCB8;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(101 204 184 / 25%);
+}
 @media (min-width: 992px) {
 .col-lg-2 {
     -ms-flex: 0 0 16.666667%;
@@ -180,11 +185,25 @@ nav {
     background-color: #101a1b;
     border-color: #ffffff;
 }
+.shadow {
+    box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.2)!important;
+}
 /*------------------------------------Google Maps*/
-
+.google-maps-api {
+    position: relative;
+    top: 250px;
+}
 
 /*------------------------------------Calculator Results*/
+.trip-distance {
+    position: relative;
+    top: 500px;
 
+}
+.total-trip-co2 {
+    position: relative;
+    top: 550px;
+}
 
 /*------------------------------------CO2 emissions programs*/
 
