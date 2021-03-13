@@ -12,37 +12,37 @@ header {
     filter: brightness(0.9);
 }
 nav {
-    height: 160px;
+    height: 85px;
     padding: 5px;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 .title-1 {
     font-family: 'B612', sans-serif;
-    font-size: x-large;
+    font-size: smaller;
     font-weight: 800;
     position: absolute;
-    top: 55px;
-    left: 120px;
+    top: 30px;
+    left: 65px;
 }
 .title-2 {
     font-family: 'B612', sans-serif;
-    font-size: x-large;
+    font-size: smaller;
     font-weight: 800;
     position: absolute;
-    top: 90px;
-    left: 120px;
+    top: 45px;
+    left: 65px;
 }
 
 
 /*------------------------------------Toggle Switch*/
 @media (min-width: 766px) {
     .toggle-location {
-    position: absolute;
-    top: 75px;
+    position: relative;
+    bottom: 45px;
     left: 90%;
     -ms-flex-pack: end!important;
     justify-content: flex-end!important;
@@ -50,6 +50,9 @@ nav {
 }
 @media (max-width: 765px) {
     .toggle-location{
+    position: relative;
+    bottom: 55px;
+    left: 85%;
     padding-top: 10px;
     -ms-flex-pack: center !important;
     -webkit-box-pack: center !important;
