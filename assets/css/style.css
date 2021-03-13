@@ -64,10 +64,122 @@ nav {
     padding: 20px 15px;
     height: 170px;
 }
-
 /*------------------------------------Calculator*/
+.co2-google-maps {
+    background-color: #3B945E;
+    height: 500px;
+    padding: 20px 15px;
+}
+.co2-calculator-heading {
+    font-family: 'B612', sans-serif;
+    color: #f2f2f2;
+    font-weight: 800;
+    padding: 15px;
+}
+.calculator-text {
+    font-family: 'B612', sans-serif;
+    width: 350px;
+}
 
-
+.fuel-type {
+    position: relative;
+    top: 30px;
+    right: 45px;
+}
+.per-mile {
+    position: relative;
+    top: 80px;
+    right: 45px;
+}
+.start-location {
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+.end-location {
+    position: relative;
+    top: 80px;
+    left: 45px;
+}
+.calculator-submit {
+    font-family: 'B612', sans-serif;
+    position: relative;
+    top: 215px;
+    
+}
+/*------------------------------------Code Taken from bootstrap*/
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #182628;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    border-radius: 12px;
+}
+.custom-select {
+    font-size: 1.25rem;
+}
+@media (min-width: 992px) {
+.col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 100%;
+}
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+.btn-primary {
+    color: #f2f2f2;
+    background-color: #182628;
+    border-color: #f2f2f2;
+}
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #101a1b;
+    border-color: #ffffff;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #101a1b;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.8rem rgb(101 204 184/ 50%)
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #101a1b;
+    border-color: #ffffff;
+}
 /*------------------------------------Google Maps*/
 
 
