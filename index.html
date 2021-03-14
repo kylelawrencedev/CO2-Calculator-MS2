@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/perspaleta1_0048.png">
     <title>CO2 Calculator</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -65,8 +66,9 @@
                 <div class="col col-lg-2">
                     <div class="">
                         <div class="input-group mb-3 calculator-text fuel-type col col-lg-2">
-                            <div class="input-group-prepend shadow">
-                                <label class="input-group-text" for="inputGroupSelect01 shadow">Fuel Type:</label>
+                            <div class="input-group-prepend">
+                                <label class="input-group-text shadow" for="inputGroupSelect01 shadow">Fuel
+                                    Type:</label>
                             </div>
                             <select class="custom-select shadow" id="inputGroupSelect01">
                                 <option selected>Choose...</option>
@@ -76,10 +78,10 @@
                         </div>
                     </div>
                     <div class="">
-                        <div class="calculator-text per-mile">
-                            <div class="input-group mb-3  col col-lg-2">
-                                <div class="input-group-prepend shadow">
-                                    <span class="input-group-text" id="basic-addon1">CO2 per mile:</span>
+                        <div class="calculator-text">
+                            <div class="input-group mb-3  col col-lg-2 per-mile">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text shadow" id="basic-addon1">CO2 per mile:</span>
                                 </div>
                                 <input type="text" class="form-control col-xs-3 shadow" placeholder="#"
                                     aria-label="Username" aria-describedby="basic-addon1">
@@ -88,14 +90,14 @@
                     </div>
                 </div>
                 <div class="col-md-auto calculator-submit">
-                    <input class="btn btn-primary btn-lg shadow" type="submit" value="Submit">
+                    <input class="btn btn-primary btn-lg" type="submit" value="Submit">
                 </div>
                 <div class="col col-lg-2">
                     <div class="">
-                        <div class="calculator-text start-location">
-                            <div class="input-group mb-3 col col-lg-2">
-                                <div class="input-group-prepend shadow">
-                                    <span class="input-group-text" id="basic-addon2">Start location :</span>
+                        <div class="calculator-text">
+                            <div class="input-group mb-3 col col-lg-2 start-location">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text shadow" id="basic-addon2">Start location :</span>
                                 </div>
                                 <input type="text" class="form-control col-xs-3 shadow" placeholder="#"
                                     aria-label="Username" aria-describedby="basic-addon1">
@@ -103,8 +105,8 @@
                         </div>
                     </div>
                     <div class="">
-                        <div class="calculator-text end-location">
-                            <div class="input-group mb-3 col col-lg-2">
+                        <div class="calculator-text">
+                            <div class="input-group mb-3 col col-lg-2 end-location">
                                 <div class="input-group-prepend shadow">
                                     <span class="input-group-text" id="basic-addon3">End location :</span>
                                 </div>
@@ -121,8 +123,8 @@
         </div>
         <div class="calculator-results">
             <div class="d-flex justify-content-center">
-                <div class="calculator-text trip-distance">
-                    <div class="input-group mb-3 col col-lg-2">
+                <div class="calculator-text">
+                    <div class="input-group mb-3 col col-lg-2 trip-distance">
                         <div class="input-group-prepend shadow">
                             <span class="input-group-text" id="basic-addon4">Trip Distance :</span>
                         </div>
@@ -132,8 +134,8 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <div class="calculator-text total-trip-co2">
-                    <div class="input-group mb-3 col col-lg-2">
+                <div class="calculator-text">
+                    <div class="input-group mb-3 col col-lg-2 total-trip-co2">
                         <div class="input-group-prepend shadow">
                             <span class="input-group-text" id="basic-addon5">Total CO2 :</span>
                         </div>
@@ -144,8 +146,61 @@
             </div>
         </div>
     </section>
-    <section>
-        CO2 emissions programs
+    <section class="offset-program-section">
+
+        <!--Bootstrap carousel-->
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="assets/images/shell-logo.png"
+                            class="d-block carousel-img" alt="Shell Petrol Logo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                Shell Go+
+                            </h5>
+
+                            <p>
+                                Shell is one of the first companies to offer customers purchasing petrol to offset that
+                                amount of petrol. All that is required is the customer has the Shell Go+ app or the
+                                shell card.
+                                <a href="https://www.shell.co.uk/media/2019-media-releases/drivers-set-to-go-carbon-neutral-with-shell.html"
+                                    target="_blank">
+                                    Read More Here...
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="10000">
+                        <img src="assets/images/Bulb-logo-pink.png" class="d-block carousel-img" alt="Bulb energy logo">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+                            <p>
+                                Bulb offers a carbon offset subscription. For as little as £5 you can offset your
+                                emissions. These emissions include petrol, food, clothes, household electricity and
+                                household gas.
+                                <a href="https://bulb.co.uk/carbon-calculator/"
+                                    target="_blank">
+                                    Calculate your subscription...
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
