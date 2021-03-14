@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&family=Lora&display=swap');
 
 /*------------------------------------General*/
-
+body {
+    overflow-x: hidden;
+}
 
 /*------------------------------------Colors*/
 
@@ -39,26 +41,7 @@ nav {
 
 
 /*------------------------------------Toggle Switch*/
-@media (min-width: 766px) {
-    .toggle-location {
-    position: relative;
-    bottom: 45px;
-    left: 90%;
-    -ms-flex-pack: end!important;
-    justify-content: flex-end!important;
-}
-}
-@media (max-width: 765px) {
-    .toggle-location{
-    position: relative;
-    bottom: 55px;
-    left: 85%;
-    padding-top: 10px;
-    -ms-flex-pack: center !important;
-    -webkit-box-pack: center !important;
-            justify-content: center !important;
-  }
-}
+
 /*------------------------------------Statement Paragraph*/
 .statement-paragraph {
     font-family: 'B612', sans-serif;
@@ -84,33 +67,199 @@ nav {
     font-family: 'B612', sans-serif;
     width: 350px;
 }
-
 .fuel-type {
     position: relative;
     top: 30px;
-    right: 45px;
+    right: 15px;
 }
 .per-mile {
     position: relative;
     top: 80px;
-    right: 45px;
+    right: 15px;
 }
 .start-location {
     position: relative;
     top: 30px;
-    left: 45px;
+    left: 15px;
 }
 .end-location {
     position: relative;
     top: 80px;
-    left: 45px;
+    left: 15px;
 }
 .calculator-submit {
     font-family: 'B612', sans-serif;
     position: relative;
     top: 215px;
 }
+/*-----------------------------------@media*/
+@media (min-width: 766px) {
+    .toggle-location {
+    position: relative;
+    bottom: 45px;
+    left: 90%;
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+}
+@media (max-width: 765px) {
+    .toggle-location{
+    position: relative;
+    bottom: 55px;
+    left: 85%;
+    padding-top: 10px;
+    -ms-flex-pack: center !important;
+    -webkit-box-pack: center !important;
+            justify-content: center !important;
+  }
+}
+@media (min-width: 992px){
+.col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 100%;
+}
+}
+@media (max-width: 765px) {
+    .col, .col-lg-2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) and (min-width:766px){
+    .fuel-type, .per-mile, .start-location, .end-location {
+        left: 170px;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .fuel-type{
+    top: 1rem;
+}
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .per-mile {
+    top: 2rem;
+}
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .start-location{
+        top: 3rem;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .end-location{
+        top: 4rem;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .calculator-submit {
+        top: 315px;
+        right: 270px;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .custom-select, .input-group-text, .form-control {
+    font-size: 1.25rem;
+    border-radius: 12px;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .fuel-type, .per-mile, .start-location, .end-location {
+        left: 6rem;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .end-location, .per-mile {
+        top: 50px;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .fuel-type, .start-location {
+    top: 20px;
+}
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .custom-select, .input-group-text, .form-control {
+    font-size: 1.2rem;
+    border-radius: 12px;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .calculator-text{
+    width: 20rem;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .calculator-submit {
+        top: 280px;
+        left: 12rem;
+    }
+}
+@media (max-width: 539px) {
+    .fuel-type, .per-mile, .start-location, .end-location {
+        left: 0rem;
+    }
+}
+@media (max-width: 539px) {
+    .end-location, .per-mile {
+        top: 50px;
+    }
+}
+@media (max-width: 539px) {
+    .fuel-type, .start-location {
+    top: 20px;
+}
+}
+@media (max-width: 539px) {
+    .custom-select, .input-group-text, .form-control {
+    font-size: 0.8rem;
+    border-radius: 12px;
+    }
+}
+@media (max-width: 539px) {
+    .calculator-text{
+    width: 18rem;
+    }
+}
+@media (max-width: 539px) {
+    .calculator-submit {
+        top: 15rem;
+        left: 6rem;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .trip-distance {
+        top: 25rem;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .trip-distance {
+        top: 25rem;
+    }
+}
+@media (max-width: 539px) {
+    .trip-distance {
+        top: 25rem;
+    }
+}
+@media (max-width: 992px) and (min-width:766px) {
+    .total-trip-co2 {
+        top: 26rem;
+    }
+}
+@media (max-width: 765px) and (min-width:540px) {
+    .total-trip-co2 {
+        top: 26rem;
+    }
+}
+@media (max-width: 539px) {
+    .total-trip-co2 {
+        top: 26rem;
+    }
+}
+
 /*------------------------------------Code Taken from bootstrap*/
+@media (min-width: 993px) {
 .input-group-text {
     display: -ms-flexbox;
     display: flex;
@@ -128,6 +277,8 @@ nav {
     border: 1px solid #ced4da;
     border-radius: 12px;
 }
+}
+@media (min-width: 993px) {
 .form-control {
     display: block;
     width: 100%;
@@ -143,23 +294,19 @@ nav {
     border-radius: 12px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+}
 .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
     border-radius: 12px;
 }
+@media (min-width: 993px) {
 .custom-select {
     font-size: 1.25rem;
+}
 }
 .custom-select:focus {
     border-color: #65CCB8;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(101 204 184 / 25%);
-}
-@media (min-width: 992px) {
-.col-lg-2 {
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 100%;
-}
 }
 .btn-group-lg>.btn, .btn-lg {
     padding: 1rem 1.5rem;
@@ -181,7 +328,7 @@ nav {
     color: #fff;
     background-color: #101a1b;
     border-color: #ffffff;
-    box-shadow: 0 0 0 0.8rem rgb(101 204 184/ 50%)
+    box-shadow: 0 0 0 0.8rem rgb(101 204 184/ 50%);
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
@@ -198,18 +345,36 @@ nav {
 }
 
 /*------------------------------------Calculator Results*/
+@media (min-width: 993px) {
 .trip-distance {
     position: relative;
     top: 500px;
-
 }
+}
+@media (min-width: 993px) {
 .total-trip-co2 {
     position: relative;
     top: 550px;
 }
+}
 
 /*------------------------------------CO2 emissions programs*/
-
+.offset-program-section {
+    font-family: 'B612', sans-serif;
+    background-color: #182628;
+    color: #f2f2f2;
+    padding: 15px;
+}
+.program-logo-container {
+    width: 150;
+    height: 150px;
+}
+.shell-program {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 50%;
+}
 /*------------------------------------Footer*/
 
 
