@@ -19,6 +19,7 @@ nav {
 }
 
 .logo {
+    filter: drop-shadow(2px 4px 8px #585858);
     width: 75px;
     height: 75px;
 }
@@ -366,14 +367,18 @@ nav {
     padding: 15px;
 }
 .program-logo-container {
-    width: 150;
-    height: 150px;
+    filter: drop-shadow(2px 4px 8px #585858);
+    padding: 10px;
+    width: 100px;
+    height: 100px;
 }
-.shell-program {
-    width: 200px;
-    height: 200px;
+.carousel-img {     
+    filter: drop-shadow(2px 4px 8px #585858);
+    width: 550px;
+    height: 400px;
     position: relative;
-    left: 50%;
+    left: 30%;
+    bottom: 4rem;
 }
 /*------------------------------------Footer*/
 
