@@ -365,20 +365,55 @@ nav {
     background-color: #182628;
     color: #f2f2f2;
     padding: 15px;
+    height: 450px;
 }
-.program-logo-container {
-    filter: drop-shadow(2px 4px 8px #585858);
-    padding: 10px;
-    width: 100px;
-    height: 100px;
+@media (max-width: 539px) {
+    .offset-program-section {
+        height: 325px;
+    }
 }
 .carousel-img {     
     filter: drop-shadow(2px 4px 8px #585858);
     width: 550px;
     height: 400px;
     position: relative;
-    left: 30%;
+    left: 25%;
     bottom: 4rem;
+}
+@media (max-width: 765px) and (min-width: 540px) {
+    .carousel-img {
+        width: 200px;
+        height: 130px;
+        left: 20%;
+        bottom: 2rem;
+    }
+}
+@media (max-width: 539px) {
+    .carousel-img {
+        width: 300px;
+        height: 235px;
+        left: 20%;
+        bottom: 2rem;
+    }
+}
+.carousel-caption {
+    bottom: 0px;
+}
+@media (max-width: 539px) {
+    .carousel-caption {
+        bottom: -20px;
+    }
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+@media (max-width:539px) {
+.carousel-indicators {
+    bottom: -60px;
+}
+}
+.bulb-img {
+    padding: 25px;
 }
 /*------------------------------------Footer*/
 
