@@ -416,12 +416,43 @@ nav {
     padding: 25px;
 }
 /*------------------------------------Footer*/
+footer {
+    height: 140px;
+    background-color: #182628;
+}
+.fa-facebook, .fa-youtube-square, .fa-twitter-square {
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    letter-spacing: 15px;
+}
+.fa-telegram, .fa-instagram, .fa-pinterest {
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    padding: 5px;
+    letter-spacing: 15px;
+}
+@media (max-width: 350px) {
+    .fa-facebook, .fa-youtube-square, .fa-twitter-square,.fa-telegram, .fa-instagram, .fa-pinterest {
+        font-size: 25px;
+    }
+    footer {
+        height: 105px;
+    }
+}
+.footer-link-colour {
+    color: #65CCB8;
+}
 
-
-
-
-
-
-
-
+.footer-link-colour:hover {
+    color: #65CCB8;
+    filter: brightness(0.5);
+}
+@media (min-width: 576px) {
+.col-sm-4 {
+    max-width: 100%;
+}
+}
 
