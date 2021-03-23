@@ -27,17 +27,20 @@
                     Calculator
                 </h1>
             </div>
-            <div class="custom-control custom-switch toggle-location">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                <label class="custom-control-label" for="customSwitch1">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
+            <div>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round">
+                        <i class="far fa-lightbulb light-theme"></i>
+                        <i class="fas fa-lightbulb dark-theme"></i>
+                    </span>
+
                 </label>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="statement-paragraph overflow-auto">
+    <section class="statement-paragraph">
+        <div class="overflow-auto">
             <p> The purpose of this calculator is to show the impact that carbon emissions have on the environment. We
                 All
                 want to improve our planet, as you have shown by searching for a carbon offset calculator. With this
@@ -96,31 +99,23 @@
                     <div class="">
                         <div class="calculator-text">
                             <div class="input-group mb-3 col col-lg-2 start-location">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text shadow" id="basic-addon2">Start location :</span>
-                                </div>
-                                <input type="text" class="form-control col-xs-3 shadow" placeholder="#"
-                                    aria-label="Username" aria-describedby="basic-addon1">
+                                <input id="origin-input" class="controls shadow" type="text"
+                                    placeholder="Enter an origin location" />
                             </div>
                         </div>
                     </div>
                     <div class="">
                         <div class="calculator-text">
                             <div class="input-group mb-3 col col-lg-2 end-location">
-                                <div class="input-group-prepend shadow">
-                                    <span class="input-group-text" id="basic-addon3">End location :</span>
-                                </div>
-                                <input type="text" class="form-control col-xs-3 shadow" placeholder="#"
-                                    aria-label="Username" aria-describedby="basic-addon1">
+                                <input id="destination-input" class="controls shadow" type="text"
+                                    placeholder="Enter a destination location" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="google-maps-api d-flex justify-content-center">
-            GOOGLE
-        </div>
+        Google Maps
         <div class="calculator-results">
             <div class="d-flex justify-content-center">
                 <div class="calculator-text">
@@ -261,7 +256,14 @@
         </div>
 
     </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&callback=initMap&libraries=places&v=weekly"
+        async></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&libraries=places&callback=initMap">
+        </script>
 
+    <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
