@@ -10,7 +10,6 @@ body {
 
 /*------------------------------------Header*/
 header {
-    background-color: #65CCB8;
     filter: brightness(0.9);
 }
 nav {
@@ -40,27 +39,102 @@ nav {
     left: 65px;
 }
 
-
 /*------------------------------------Toggle Switch*/
+/*------------------------------------https://www.w3schools.com/howto/howto_css_switch.asp*/
+switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  left: 90%;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+@media (max-width: 765px) and (min-width: 540px) {
+    .slider {
+        left: 75%;
+    }
+}
+@media (max-width:539px) {
+    .slider {
+        left: 70%;
+    }
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 6px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+input:checked + .slider {
+  background-color: #182628;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px #f2f2f2;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.slider.round {
+  border-radius: 34px;
+  height: 20px;
+  width: 45px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.light-theme {
+    filter: drop-shadow(2px 4px 2px #585858);
+    position: relative;
+    right: 30px;
+    bottom: 5px;
+    font-size: x-large;
+}
+.dark-theme {
+    filter: drop-shadow(2px 4px 2px #585858);
+    position: relative;
+    left: 38px;
+    bottom: 5px;
+    font-size: x-large;
+}
 
 /*------------------------------------Statement Paragraph*/
 .statement-paragraph {
     font-family: 'B612', sans-serif;
-    color: #f2f2f2;
-    background-color: #182628;
-    padding: 20px 15px;
-    height: 170px;
+    padding: 20px;
+    height: 200px;
 }
 /*------------------------------------Calculator*/
 .co2-google-maps {
-    background-color: #3B945E;
     filter: brightness(0.9);
     height: 1000px;
     padding: 20px 15px;
 }
 .co2-calculator-heading {
     font-family: 'B612', sans-serif;
-    color: #f2f2f2;
+
     font-weight: 800;
     padding: 15px;
 }
@@ -80,12 +154,12 @@ nav {
 }
 .start-location {
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 15px;
 }
 .end-location {
     position: relative;
-    top: 80px;
+    top: 60px;
     left: 15px;
 }
 .calculator-submit {
@@ -274,7 +348,6 @@ nav {
     color: #182628;
     text-align: center;
     white-space: nowrap;
-    background-color: #f2f2f2;
     border: 1px solid #ced4da;
     border-radius: 12px;
 }
@@ -289,7 +362,7 @@ nav {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 12px;
@@ -316,8 +389,7 @@ nav {
     border-radius: 10px;
 }
 .btn-primary {
-    color: #f2f2f2;
-    background-color: #182628;
+
     border-color: #f2f2f2;
 }
 .btn-primary:hover {
@@ -345,6 +417,60 @@ nav {
     top: 250px;
 }
 
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    width: 80%;
+    height: 50%;
+    top: 200px;
+    left: 10%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #f2f2f2;
+  font-family: 'B612', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 100%;
+  border-radius: 12px;
+  height: calc(1.5em + .75rem + 2px);
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 /*------------------------------------Calculator Results*/
 @media (min-width: 993px) {
 .trip-distance {
@@ -362,7 +488,7 @@ nav {
 /*------------------------------------CO2 emissions programs*/
 .offset-program-section {
     font-family: 'B612', sans-serif;
-    background-color: #182628;
+
     color: #f2f2f2;
     padding: 15px;
     height: 450px;
@@ -418,7 +544,7 @@ nav {
 /*------------------------------------Footer*/
 footer {
     height: 140px;
-    background-color: #182628;
+
 }
 .fa-facebook, .fa-youtube-square, .fa-twitter-square {
     font-size: 40px;
@@ -442,10 +568,6 @@ footer {
         height: 105px;
     }
 }
-.footer-link-colour {
-    color: #65CCB8;
-}
-
 .footer-link-colour:hover {
     color: #65CCB8;
     filter: brightness(0.5);
@@ -455,4 +577,51 @@ footer {
     max-width: 100%;
 }
 }
-
+/*------------------------------------Theme Selection*/
+.dark-mode, header, .statement-paragraph, .co2-google-maps, .offset-program-section, footer, .footer-link-colour{
+    transition: background 0.6s ease-in, color 0.6s ease-in;
+    -webkit-transition: background 0.6s ease-in, color 0.6s ease-in;
+}
+/*------------------------------------https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp*/
+header {
+    color: #182628;
+    background-color: #f2f2f2;
+}
+.dark-mode header {
+    color: #182628;
+    background:#65CCB8
+}
+.statement-paragraph {
+    color: #f2f2f2;
+    background-color: #3B945E;
+}
+.dark-mode .statement-paragraph {
+    background-color: #182628;
+}
+.co2-google-maps {
+    color: #182628;
+    background-color: #f2f2f2;
+}
+.dark-mode .co2-google-maps {
+    color: #f2f2f2;
+    background-color: #3B945E;
+}
+.offset-program-section  {
+    color: #f2f2f2;
+    background-color: #3B945E;
+}
+.dark-mode .offset-program-section {
+    background-color: #182628;
+}
+footer {
+    background-color: #3B945E;
+}
+.dark-mode footer {
+    background-color: #182628;
+}
+.footer-link-colour {
+    color: #f2f2f2;
+}
+.dark-mode .footer-link-colour {
+    color: #65CCB8;
+}
