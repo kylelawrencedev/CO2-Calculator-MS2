@@ -41,6 +41,8 @@ nav {
 
 /*------------------------------------Toggle Switch*/
 /*------------------------------------https://www.w3schools.com/howto/howto_css_switch.asp*/
+
+
 switch {
   position: relative;
   display: inline-block;
@@ -73,6 +75,7 @@ switch {
         left: 70%;
     }
 }
+
 .slider:before {
   position: absolute;
   content: "";
@@ -84,7 +87,6 @@ switch {
   -webkit-transition: .6s;
   transition: .6s;
 }
-
 input:checked + .slider {
   background-color: #182628;
 }
@@ -134,7 +136,6 @@ input:checked + .slider:before {
 }
 .co2-calculator-heading {
     font-family: 'B612', sans-serif;
-
     font-weight: 800;
     padding: 15px;
 }
@@ -167,26 +168,10 @@ input:checked + .slider:before {
     position: relative;
     top: 215px;
 }
-/*-----------------------------------@media*/
-@media (min-width: 766px) {
-    .toggle-location {
-    position: relative;
-    bottom: 45px;
-    left: 90%;
-    -ms-flex-pack: end!important;
-    justify-content: flex-end!important;
-}
-}
 @media (max-width: 765px) {
-    .toggle-location{
-    position: relative;
-    bottom: 55px;
-    left: 85%;
-    padding-top: 10px;
-    -ms-flex-pack: center !important;
-    -webkit-box-pack: center !important;
-            justify-content: center !important;
-  }
+  .col, .col-lg-2 {
+        max-width: 100%;
+    }
 }
 @media (min-width: 992px){
 .col-lg-2 {
@@ -195,144 +180,94 @@ input:checked + .slider:before {
     max-width: 100%;
 }
 }
-@media (max-width: 765px) {
-    .col, .col-lg-2 {
-        max-width: 100%;
-    }
-}
 
 @media (max-width: 992px) and (min-width:766px){
     .fuel-type, .per-mile, .start-location, .end-location {
         left: 170px;
     }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .fuel-type{
-    top: 1rem;
+        top: 1rem;
 }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .per-mile {
-    top: 2rem;
+        top: 2rem;
 }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .start-location{
         top: 3rem;
     }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .end-location{
         top: 4rem;
     }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .calculator-submit {
         top: 315px;
         right: 270px;
     }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .custom-select, .input-group-text, .form-control {
-    font-size: 1.25rem;
-    border-radius: 12px;
+        font-size: 1.25rem;
+        border-radius: 12px;
+    }
+    .trip-distance {
+        top: 25rem;
+    }
+    .total-trip-co2 {
+        top: 26rem;
     }
 }
 @media (max-width: 765px) and (min-width:540px) {
     .fuel-type, .per-mile, .start-location, .end-location {
         left: 6rem;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
     .end-location, .per-mile {
         top: 50px;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
     .fuel-type, .start-location {
-    top: 20px;
-}
-}
-@media (max-width: 765px) and (min-width:540px) {
+        top: 20px;
+    }
     .custom-select, .input-group-text, .form-control {
-    font-size: 1.2rem;
-    border-radius: 12px;
+        font-size: 1.2rem;
+        border-radius: 12px;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
     .calculator-text{
-    width: 20rem;
+        width: 20rem;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
     .calculator-submit {
         top: 280px;
         left: 12rem;
+    }
+    .trip-distance {
+        top: 25rem;
+    }
+    .total-trip-co2 {
+        top: 26rem;
     }
 }
 @media (max-width: 539px) {
     .fuel-type, .per-mile, .start-location, .end-location {
         left: 0rem;
     }
-}
-@media (max-width: 539px) {
     .end-location, .per-mile {
         top: 50px;
     }
-}
-@media (max-width: 539px) {
     .fuel-type, .start-location {
-    top: 20px;
-}
-}
-@media (max-width: 539px) {
+        top: 20px;
+    }
     .custom-select, .input-group-text, .form-control {
-    font-size: 0.8rem;
-    border-radius: 12px;
+        font-size: 0.8rem;
+        border-radius: 12px;
     }
-}
-@media (max-width: 539px) {
     .calculator-text{
-    width: 18rem;
+        width: 18rem;
     }
-}
-@media (max-width: 539px) {
-    .calculator-submit {
+        .calculator-submit {
         top: 15rem;
         left: 6rem;
     }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .trip-distance {
         top: 25rem;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
-    .trip-distance {
-        top: 25rem;
-    }
-}
-@media (max-width: 539px) {
-    .trip-distance {
-        top: 25rem;
-    }
-}
-@media (max-width: 992px) and (min-width:766px) {
     .total-trip-co2 {
         top: 26rem;
     }
-}
-@media (max-width: 765px) and (min-width:540px) {
-    .total-trip-co2 {
-        top: 26rem;
-    }
-}
-@media (max-width: 539px) {
-    .total-trip-co2 {
-        top: 26rem;
-    }
-}
-
+} 
 /*------------------------------------Code Taken from bootstrap*/
 @media (min-width: 993px) {
 .input-group-text {
@@ -389,7 +324,6 @@ input:checked + .slider:before {
     border-radius: 10px;
 }
 .btn-primary {
-
     border-color: #f2f2f2;
 }
 .btn-primary:hover {
@@ -479,26 +413,18 @@ input:checked + .slider:before {
     position: relative;
     top: 500px;
 }
-}
-@media (min-width: 993px) {
 .total-trip-co2 {
     position: relative;
     top: 550px;
 }
 }
-
 /*------------------------------------CO2 emissions programs*/
+@media (min-width:992px) {
 .offset-program-section {
     font-family: 'B612', sans-serif;
-
     color: #f2f2f2;
     padding: 15px;
     height: 450px;
-}
-@media (max-width: 539px) {
-    .offset-program-section {
-        height: 325px;
-    }
 }
 .carousel-img {     
     filter: drop-shadow(2px 4px 8px #585858);
@@ -508,6 +434,33 @@ input:checked + .slider:before {
     left: 25%;
     bottom: 4rem;
 }
+.carousel-caption {
+    bottom: 0px;
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+.bulb-img {
+    padding: 25px;
+}
+}
+@media (max-width: 539px) {
+    .offset-program-section {
+        height: 325px;
+    }
+    .carousel-img {
+        width: 300px;
+        height: 235px;
+        left: 20%;
+        bottom: 2rem;
+    }
+    .carousel-caption {
+        bottom: -20px;
+    }
+    .carousel-indicators {
+        bottom: -60px;
+}
+}
 @media (max-width: 765px) and (min-width: 540px) {
     .carousel-img {
         width: 200px;
@@ -516,37 +469,10 @@ input:checked + .slider:before {
         bottom: 2rem;
     }
 }
-@media (max-width: 539px) {
-    .carousel-img {
-        width: 300px;
-        height: 235px;
-        left: 20%;
-        bottom: 2rem;
-    }
-}
-.carousel-caption {
-    bottom: 0px;
-}
-@media (max-width: 539px) {
-    .carousel-caption {
-        bottom: -20px;
-    }
-}
-.carousel-indicators {
-    bottom: -40px;
-}
-@media (max-width:539px) {
-.carousel-indicators {
-    bottom: -60px;
-}
-}
-.bulb-img {
-    padding: 25px;
-}
+
 /*------------------------------------Footer*/
 footer {
     height: 140px;
-
 }
 .fa-facebook, .fa-youtube-square, .fa-twitter-square {
     font-size: 40px;
@@ -562,6 +488,11 @@ footer {
     padding: 5px;
     letter-spacing: 15px;
 }
+@media (min-width: 576px) {
+.col-sm-4 {
+    max-width: 100%;
+}
+}
 @media (max-width: 350px) {
     .fa-facebook, .fa-youtube-square, .fa-twitter-square,.fa-telegram, .fa-instagram, .fa-pinterest {
         font-size: 25px;
@@ -575,11 +506,6 @@ footer {
     filter: brightness(0.5);
     transition: 0.6s ease-in;
     -moz-transition: 0.6s ease-in;
-}
-@media (min-width: 576px) {
-.col-sm-4 {
-    max-width: 100%;
-}
 }
 /*------------------------------------Theme Selection*/
 .dark-mode, header, .statement-paragraph, .co2-google-maps, .offset-program-section, footer, .footer-link-colour{
