@@ -67,16 +67,6 @@ switch {
   -webkit-transition: .6s;
   transition: .6s;
 }
-@media (min-width: ) {
-    .slider {
-        left: 75%;
-    }
-}
-@media (max-width:) {
-    .slider {
-        left: 70%;
-    }
-}
 
 .slider:before {
   position: absolute;
@@ -144,150 +134,11 @@ input:checked + .slider:before {
     font-family: 'B612', sans-serif;
     width: 350px;
 }
-.fuel-type {
-    position: relative;
-    top: 30px;
-    
-}
-.per-mile {
-    position: relative;
-    top: 80px;
-    
-}
-.start-location {
-    position: relative;
-    top: 20px;
-    left: 15px;
-}
-.end-location {
-    position: relative;
-    top: 60px;
-    left: 15px;
-}
-.calculator-submit {
-    font-family: 'B612', sans-serif;
-    position: relative;
-    top: 215px;
-}
-.trip-distance {
-    top: 25rem;
-}
-.total-trip-co2 {
-    top: 26rem;
-}
-
-.col-lg-2 {
-    -ms-flex: 1 0 16.666667%;
-    flex: 1 0 16.666667%;
-    max-width: 100%;
-}
 
 
-@media(max-width: 768px){
-    .fuel-type, .per-mile, .start-location, .end-location {
-        left: 170px;
-    }
-    .fuel-type{
-        top: 1rem;
-}
-    .per-mile {
-        top: 2rem;
-}
-    .start-location{
-        top: 3rem;
-    }
-    .end-location{
-        top: 4rem;
-    }
-    .calculator-submit {
-        top: 350px;
-        right: 285px;
-    }
-    .custom-select, .input-group-text, .form-control {
-        font-size: 1.25rem;
-        border-radius: 12px;
-    }
-    .trip-distance {
-        top: 25rem;
-    }
-    .total-trip-co2 {
-        top: 26rem;
-    }
-}
-@media(max-width: 540px) {
-    .fuel-type, .per-mile, .start-location, .end-location {
-        left: 4.5rem;
-    }
-    .end-location, .per-mile {
-        top: 50px;
-    }
-    .fuel-type, .start-location {
-        top: 20px;
-    }
-    .custom-select, .input-group-text, .form-control {
-        font-size: 1rem;
-    }
-    .calculator-text{
-        width: 20rem;
-    }
-    .calculator-submit {
-        top: 280px;
-        left: 10.5rem;
-    }
-    .trip-distance {
-        top: 25rem;
-    }
-    .total-trip-co2 {
-        top: 26rem;
-    }
-}
-@media (max-width: ) {
-    .fuel-type, .per-mile, .start-location, .end-location {
-        left: 0rem;
-    }
-    .end-location, .per-mile {
-        top: 50px;
-    }
-    .fuel-type, .start-location {
-        top: 20px;
-    }
-    .custom-select, .input-group-text, .form-control {
-        font-size: 0.8rem;
-        border-radius: 12px;
-    }
-    .calculator-text{
-        width: 18rem;
-    }
-        .calculator-submit {
-        top: 15rem;
-        left: 6rem;
-    }
-    .trip-distance {
-        top: 25rem;
-    }
-    .total-trip-co2 {
-        top: 26rem;
-    }
-} 
 /*------------------------------------Code Taken from bootstrap*/
 
 
-.input-group-text {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: .375rem .75rem;
-    margin-bottom: 0;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #182628;
-    text-align: center;
-    white-space: nowrap;
-    border: 1px solid #ced4da;
-    border-radius: 12px;
-}
 .form-control {
     display: block;
     width: 100%;
@@ -307,42 +158,8 @@ input:checked + .slider:before {
 .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
     border-radius: 12px;
 }
-.custom-select {
-    font-size: 1.25rem;
-}
 
-.custom-select:focus {
-    border-color: #65CCB8;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(101 204 184 / 25%);
-}
-.btn-group-lg>.btn, .btn-lg {
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 10px;
-}
-.btn-primary {
-    border-color: #f2f2f2;
-}
-.btn-primary:hover {
-    color: #ffffff;
-    background-color: #101a1b;
-    border-color: #ffffff;
-    transition: 0.6s ease-in;
-    -moz-transition: 0.6s ease-in;
-}
-.btn-primary.focus, .btn-primary:focus {
-    color: #fff;
-    background-color: #101a1b;
-    border-color: #ffffff;
-    box-shadow: 0 0 0 0.8rem rgb(101 204 184/ 50%);
-}
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #101a1b;
-    border-color: #ffffff;
-}
+
 .shadow {
     box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.2)!important;
     border-radius: 12px;
@@ -352,7 +169,6 @@ input:checked + .slider:before {
     position: relative;
     top: 250px;
 }
-
 .fa-map-marker-alt,
 .fa-dot-circle {
   color: #182628;
@@ -395,9 +211,6 @@ sub {
     font-size: 75%;
 }
 
-
-
-
 /* Optional: Makes the sample page fill the window. */
 
 .controls {
@@ -411,56 +224,10 @@ sub {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#origin-input,
-#destination-input {
-  background-color: #f2f2f2;
-  font-family: 'B612', sans-serif;
-  font-weight: 400;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 100%;
-  border-radius: 12px;
-  height: calc(1.5em + .75rem + 2px);
-} 
-@media (max-width:1400px) {
-    #origin-input, #destination-input {
-        font-size: 1.25rem;
-    }
-}
-@media (max-width:540px){
-    #origin-input, #destination-input {
-        font-size: 1rem;
-    }
-}
-#origin-input:focus,
-#destination-input:focus {
-  border-color: #4d90fe;
-}
 
-#mode-selector {
-  color: #fff;
-  background-color: #4d90fe;
-  margin-left: 12px;
-  padding: 5px 11px 0px 11px;
-}
-
-#mode-selector label {
-  font-family: Roboto;
-  font-size: 13px;
-  font-weight: 300;
-}
 
 /*------------------------------------Calculator Results*/
-@media (min-width: ) {
-.trip-distance {
-    position: relative;
-    top: 500px;
-}
-.total-trip-co2 {
-    position: relative;
-    top: 550px;
-}
-}
+
 /*------------------------------------CO2 emissions programs*/
 
 .offset-program-section {
@@ -544,15 +311,7 @@ sub {
         padding: 25px;
     }
 }
-@media (max-width: ) {
-    .carousel-img {
-        left: 15%;
-        filter: drop-shadow(2px 4px 8px #585858)
-    }
-    .carousel-caption {
-        left: 9%;
-    }
-}
+
 
 /*------------------------------------Footer*/
 footer {
