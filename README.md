@@ -172,5 +172,9 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 
 ---
 ## **Credits**
+https://www.brainyquote.com/quotes/greta_thunburg_1088216?src=t_emissions (greta quote)
+https://www.subpng.com/png-bctacm/ shell logo
+https://thereverend.co.uk/blog/wp-content/uploads/2019/01/Bulb-logo-pink.png bulb logo
+
 
 ---
