@@ -266,10 +266,7 @@ sub {
         left: 22%;       
     }
     .carousel-caption {
-        position: relative;
         width: 440px;
-        left: 20%;
-        bottom: 8rem;
         font-size: large;
     }
     .carousel-indicators {
@@ -278,30 +275,26 @@ sub {
     .bulb-img {
         padding: 45px;
     }
-    .carousel-control-next {
-        right: 75px;
-    }
-    
-    .carousel-control-prev {
-        left: 75px;
-    }
 }
 @media (max-width: 540px) {
     .offset-program-section {
-        height: 250px;
+        height: 300px;
     }
     .carousel-img {
         width: 200px;
         height: 130px;
         position: relative;
-        left: 22%;
         filter: drop-shadow(2px 4px 8px #585858);
+        bottom: 0.5em;
+    }
+    .carousel-item {
+        right: 0.5rem;
+        height: 280px;
     }
     .carousel-caption {
-        width: 200px;
-        position: relative;
-        align-content: center;
-        bottom: 20px;
+        width: 200px;        
+        font-size: medium;
+        top: 3rem;
     }
     .carousel-indicators {
         bottom: 50px;
