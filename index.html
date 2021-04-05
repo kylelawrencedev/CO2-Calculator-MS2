@@ -62,82 +62,43 @@
     </section>
     <section class="co2-google-maps">
         <div>
-            <h1 class="text-center co2-calculator-heading">CO2 Calculator</h1>
+            <h1 class="text-center co2-calculator-heading">CO<sub>2</sub> Calculator</h1>
         </div>
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-2">
-                    <div class="">
-                        <div class="input-group mb-3 calculator-text fuel-type col col-lg-2">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text shadow" for="inputGroupSelect01 shadow">Fuel
-                                    Type:</label>
-                            </div>
-                            <select class="custom-select shadow" id="inputGroupSelect01">
-                                <option selected>Choose...</option>
-                                <option value="1">Petrol</option>
-                                <option value="2">Diesel</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="calculator-text">
-                            <div class="input-group mb-3  col col-lg-2 per-mile">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text shadow" id="basic-addon1">CO2 per mile:</span>
-                                </div>
-                                <input type="text" class="form-control col-xs-3 shadow" placeholder="#"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
+
+
+        <div class="container-fluid">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control-label"><i class="far fa-play-circle"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="from" placeholder="Origin" class="form-control">
                     </div>
                 </div>
-                <div class="col-md-auto calculator-submit">
-                    <input class="btn btn-primary btn-lg" type="submit" value="Submit">
-                </div>
-                <div class="col col-lg-2">
-                    <div class="">
-                        <div class="calculator-text">
-                            <div class="input-group mb-3 col col-lg-2 start-location">
-                                <input id="origin-input" class="controls shadow" type="text"
-                                    placeholder="Enter an origin location" />
-                            </div>
-                        </div>
+                <div class="form-group">
+
+                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-flag-checkered"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="to" placeholder="Destination" class="form-control">
                     </div>
-                    <div class="">
-                        <div class="calculator-text">
-                            <div class="input-group mb-3 col col-lg-2 end-location">
-                                <input id="destination-input" class="controls shadow" type="text"
-                                    placeholder="Enter a destination location" />
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
+            </form>
+
+            <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                <button class="btn btn-info btn-lg  " onclick="calcRoute();"><i class="fas fa-route"></i></button>
             </div>
         </div>
-        Google Maps
-        <div class="calculator-results">
-            <div class="d-flex justify-content-center">
-                <div class="calculator-text">
-                    <div class="input-group mb-3 col col-lg-2 trip-distance">
-                        <div class="input-group-prepend shadow">
-                            <span class="input-group-text" id="basic-addon4">Trip Distance :</span>
-                        </div>
-                        <input type="text" class="form-control col-xs-3 shadow" placeholder="#" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                </div>
+        <div class="container-fluid">
+            <div id="output">
+
             </div>
-            <div class="d-flex justify-content-center">
-                <div class="calculator-text">
-                    <div class="input-group mb-3 col col-lg-2 total-trip-co2">
-                        <div class="input-group-prepend shadow">
-                            <span class="input-group-text" id="basic-addon5">Total CO2 :</span>
-                        </div>
-                        <input type="text" class="form-control col-xs-3 shadow" placeholder="#" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                </div>
+            <div id="googleMap">
+
+            </div>
+
+            <div id="calculation">
+
             </div>
         </div>
     </section>
@@ -154,12 +115,12 @@
                     <div class="carousel-item active" data-interval="10000">
                         <img src="assets/images/shell-logo.png" class="d-block carousel-img" alt="Shell Petrol Logo">
                         <div class="carousel-caption">
-                            <h5 class="d-none d-lg-block">
-                                Shell Go+
-                            </h5>
-                            <p class="d-none d-lg-block">
-                                Shell is one of the first companies to offer customers purchasing petrol to offset that
-                                amount of petrol. All that is required is the customer has the Shell Go+ app or the
+
+                            <p class="d-none d-md-block">
+                                Shell is one of the first companies to offer customers purchasing petrol to
+                                offset that
+                                amount of petrol. All that is required is the customer has the Shell Go+ app or
+                                the
                                 shell card.
                                 <a href="https://www.shell.co.uk/media/2019-media-releases/drivers-set-to-go-carbon-neutral-with-shell.html"
                                     target="_blank">
@@ -181,8 +142,10 @@
                             alt="Bulb energy logo">
                         <div class="carousel-caption">
                             <p class="d-none d-md-block">
-                                Bulb offers a carbon offset subscription. For as little as £5 you can offset your
-                                emissions. These emissions include petrol, food, clothes, household electricity and
+                                Bulb offers a carbon offset subscription. For as little as £5 you can offset
+                                your
+                                emissions. These emissions include petrol, food, clothes, household electricity
+                                and
                                 household gas.
                                 <a href="https://bulb.co.uk/carbon-calculator/" target="_blank">
                                     Calculate your subscription...
@@ -256,12 +219,10 @@
         </div>
 
     </footer>
+    <!---Google maps API-->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&callback=initMap&libraries=places&v=weekly"
-        async></script>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&libraries=places&callback=initMap">
-        </script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&libraries=places"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>

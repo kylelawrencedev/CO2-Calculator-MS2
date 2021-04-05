@@ -353,6 +353,47 @@ input:checked + .slider:before {
     top: 250px;
 }
 
+.fa-map-marker-alt,
+.fa-dot-circle {
+  color: #182628;
+}
+
+
+/*Submit Button*/
+.btn {
+    background-color: #182628;
+}
+.btn:hover {
+    background-color: #182628;
+    filter: brightness(0.5);
+}
+.btn:focus {
+    color: #f2f2f2;
+    background-color: #182628;
+    border-color: #65CCB8;
+}
+/*map*/
+#googleMap {
+  width: 80%;
+  height: 400px;
+  margin: 10px auto;
+}
+
+/*output box*/
+#output, #calculation {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+#mode {
+  color: #182628;
+}
+
+sub {
+    bottom: -.25em;
+    font-size: 75%;
+}
 
 
 
