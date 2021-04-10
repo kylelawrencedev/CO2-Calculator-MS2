@@ -304,8 +304,17 @@ sub {
         padding: 25px;
     }
 }
-
-
+.link-btn {
+    background-color: transparent;
+    border-color: #f2f2f2;
+    border-radius: 12px;
+}
+.btn-primary:hover {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+    filter: brightness(0.7);
+    transition: 0.5s ease-in;
+}
 /*------------------------------------Footer*/
 footer {
     height: 140px;
