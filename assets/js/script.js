@@ -46,19 +46,15 @@ function calcRoute() {
             const output = document.querySelector('#output');
             output.innerHTML = `<div>From: ${document.getElementById("from").value}.<br />To: ${document.getElementById("to").value}.<br /> Driving distance <i class='fas fa-road'></i> : ${result.routes[0].legs[0].distance.text}.<br />Duration <i class='fas fa-hourglass-start'></i> : ${result.routes[0].legs[0].duration.text}.</div>`;
 
+            // Calculate CO2
+            // My own code
             calculation = document.querySelector('#calculation');
-            calculation.innerHTML = `<div>CO<sub>2</sub>: ${((result.routes[0].legs[0].distance.value / 1000) * 0.12).toFixed(3)} kg of CO<sub>2</sub></div>`
-
-            
-
-            //Calculate CO2
-
-
-
+            calculation.innerHTML = `<div>CO<sub>2</sub>: ${((result.routes[0].legs[0].distance.value / 1000) * 0.12).toFixed(2)} kg of CO<sub>2</sub> for Petrol <br>CO<sub>2</sub>: ${((result.routes[0].legs[0].distance.value / 1000) * 0.132).toFixed(2)} kg of CO<sub>2</sub> for Diesel </div>`;
 
             //display route
             directionsDisplay.setDirections(result);
-        } else {
+        }
+        else {
             //delete route from map
             directionsDisplay.setDirections({ routes: [] });
             //center map in London
@@ -68,11 +64,10 @@ function calcRoute() {
             output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";
         }
     });
-
-
-
 }
-console.log(calcRoute)
+
+
+
 
 //create autocomplete objects for all inputs
 
