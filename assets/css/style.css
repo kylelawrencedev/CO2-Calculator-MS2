@@ -176,6 +176,7 @@ input:checked + .slider:before {
 /*Submit Button*/
 .btn {
     background-color: #182628;
+    filter: drop-shadow(0px 0px 4px #585858);
 }
 .btn:hover {
     background-color: #182628;
@@ -191,7 +192,7 @@ input:checked + .slider:before {
   width: 80%;
   height: 400px;
   margin: 10px auto;
-  filter: drop-shadow(0px 0px 8px #585858);
+  filter: drop-shadow(0px 0px 4px #585858);
 }
 
 /*output box*/
