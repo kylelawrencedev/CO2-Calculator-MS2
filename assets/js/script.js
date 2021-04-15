@@ -29,7 +29,7 @@ directionsDisplay.setMap(map);
 
 
 //define calcRoute function
-function calcRoute() {
+function calculateRoute() {
     //create request
     var request = {
         origin: document.getElementById("from").value,
@@ -65,14 +65,29 @@ function calcRoute() {
         }
     });
 }
-
-
-
-
 //create autocomplete objects for all inputs
 
-var input1 = document.getElementById("from");
-var autocomplete1 = new google.maps.places.Autocomplete(input1);
-
-var input2 = document.getElementById("to");
-var autocomplete2 = new google.maps.places.Autocomplete(input2);
+let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
+let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
+/**
+ * Submits users inputs for calculator to show results
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("option");
+    // get attributes from selection options
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            document.getElementById('').getAttribute("data-type") === "submit"; {
+                calcCarbon();
+            }
+        });
+    }
+});
+/**
+ *Uses the distance from input to calcute Co2 output for a journey using either petrol/diesel or km/mi as other options
+ userDistance gets the value of the number the user put into the input field
+ */
+function calculateCarbon() {
+    let userDistance = parseInt(document.getElementById("totalDistance").value);
+    carbonResult.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`
+}
