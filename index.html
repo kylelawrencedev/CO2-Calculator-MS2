@@ -65,28 +65,18 @@
             <h1 class="text-center co2-calculator-heading">CO<sub>2</sub> Calculator</h1>
         </div>
 
-
+<!--Center input fields and place icons next to input fields using bootstrap d-flex-->
         <div class="container-fluid">
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label for="from" class="col-xs-2 control-label"><i class="far fa-play-circle"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="from" placeholder="Origin" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-
-                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-flag-checkered"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="to" placeholder="Destination" class="form-control">
-                    </div>
-
-                </div>
-
-            </form>
-
+            <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                <label for="from" class="col-xs-2 control-label"><i class="far fa-play-circle icon"></i></label>
+                <input type="text" id="from" placeholder="Origin" class="form-control calc-border">
+            </div>
+            <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                <label for="to" class="col-xs-2 control-label"><i class="fas fa-flag-checkered icon"></i></label>
+                <input type="text" id="to" placeholder="Destination" class="form-control calc-border">
+            </div>
             <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                <button class="btn btn-info btn-lg  " onclick="calculateRoute();"><i class="fas fa-route"></i></button>
+                <button class="btn btn-info btn-lg " onclick="calculateRoute();">Calculate CO<sub>2</sub> <i class="fas fa-route"></i></button>
             </div>
         </div>
         <div class="container-fluid">
@@ -102,7 +92,8 @@
             </div>
             <div class="myCalculator">
                 <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                    <input type="number" id="totalDistance" class="calc-border" name="myDistance" placeholder="Total Distance...">
+                    <input type="number" id="totalDistance" class="calc-border" name="myDistance"
+                        placeholder="Total Distance...">
                 </div>
 
                 <div id="distanceType" class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
