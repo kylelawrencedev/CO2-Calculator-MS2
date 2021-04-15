@@ -86,7 +86,7 @@
             </form>
 
             <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                <button class="btn btn-info btn-lg  " onclick="calcRoute();"><i class="fas fa-route"></i></button>
+                <button class="btn btn-info btn-lg  " onclick="calculateRoute();"><i class="fas fa-route"></i></button>
             </div>
         </div>
         <div class="container-fluid">
@@ -101,7 +101,33 @@
 
             </div>
             <div class="myCalculator">
-                
+                <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <input type="number" id="totalDistance" class="calc-border" name="myDistance" placeholder="Total Distance...">
+                </div>
+
+                <div id="distanceType" class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <select class="custom-select my-1 mr-sm-2 calc-border" id="inlineFormCustomSelectPref">
+                        <option selected>Distance Type...</option>
+                        <option value="0.621371" id="Miles">Miles</option>
+                        <option value="1" id="Kilometers">Kilometers</option>
+                    </select>
+                </div>
+                <div id="fuelType" class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <select class="custom-select my-1 mr-sm-2 calc-border" id="inlineFormCustomSelectPref1">
+                        <option selected>Fuel Type...</option>
+                        <option value="0.12" id="Petrol">Petrol</option>
+                        <option value="0.132" id="Diesel">Diesel</option>
+                    </select>
+                </div>
+                <div id="carbonResult">
+
+                </div>
+                <div id="totalCarbon" class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <button type="button" class="btn btn-success" data-type="submit" onclick="calculateCarbon()"
+                        id="calcSubmit">Calculate <i class="fas fa-calculator"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -126,7 +152,7 @@
                                 the
                                 shell card.
                                 <a href="https://www.shell.co.uk/media/2019-media-releases/drivers-set-to-go-carbon-neutral-with-shell.html"
-                                    target="_blank"  class="btn btn-primary link-btn" role="button">
+                                    target="_blank" class="btn btn-primary link-btn" role="button">
                                     Read More Here...
                                 </a>
                             </p>
@@ -150,14 +176,16 @@
                                 emissions. These emissions include petrol, food, clothes, household electricity
                                 and
                                 household gas.
-                                <a href="https://bulb.co.uk/carbon-calculator/" target="_blank" class="btn btn-primary link-btn" role="button">
-                                   Calculate your subscription...
+                                <a href="https://bulb.co.uk/carbon-calculator/" target="_blank"
+                                    class="btn btn-primary link-btn" role="button">
+                                    Calculate your subscription...
                                 </a>
                             </p>
                             <p class="carousel-caption d-md-none overflow-auto">
                                 Offset your carbon for as little as £5.
                                 <br>
-                                <a href="https://bulb.co.uk/carbon-calculator/" target="_blank" class="btn btn-primary link-btn" role="button">
+                                <a href="https://bulb.co.uk/carbon-calculator/" target="_blank"
+                                    class="btn btn-primary link-btn" role="button">
                                     Subscribe Now...
                                 </a>
                             </p>
