@@ -7,6 +7,12 @@ body {
 a {
     color: #182628;
 }
+/*------------------------------------Change bootstrap code to stop it from moving divs for calculator*/
+@media (min-width: 576px) {
+.mr-sm-2, .mx-sm-2 {
+    margin-right: 0px!important;
+}
+}
 /*------------------------------------Colors*/
 
 
@@ -134,7 +140,11 @@ input:checked + .slider:before {
     font-family: 'B612', sans-serif;
     width: 350px;
 }
-
+.userCalculator {
+    font-family: 'B612', sans-serif;
+    text-align: center;
+    font-size: larger;
+}
 
 /*------------------------------------Code Taken from bootstrap*/
 
@@ -177,6 +187,8 @@ input:checked + .slider:before {
 .btn {
     background-color: #182628;
     filter: drop-shadow(0px 0px 4px #585858);
+    width: 80%;
+    border-radius: 12px;
 }
 .btn:hover {
     background-color: #182628;
@@ -223,13 +235,29 @@ sub {
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-
-
-
-/*------------------------------------Calculator Results*/
-
+/*------------------------------------Calculator*/
+/*------------------------------------Place calculator submit button in the middle of the screen*/
+#totalCarbon {
+    padding-top: 12px;
+}
+/*------------------------------------Style border-radius of myCalculator section to  match the border-radius of rest of site. 
+Change some other features of myCalculator section to match rest of site*/
+.calc-border {
+    border-radius: 12px;
+    border-color: #182628;
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 50%;
+}
+#totalDistance {
+    padding: 5px;
+}
+input {
+    text-indent: 5px;
+}
 /*------------------------------------CO2 emissions programs*/
-
 .offset-program-section {
     font-family: 'B612', sans-serif;
     color: #f2f2f2;
