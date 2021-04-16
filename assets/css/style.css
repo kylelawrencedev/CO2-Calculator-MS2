@@ -75,7 +75,7 @@ switch {
   left: 90%;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #65CCB8;
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -129,6 +129,22 @@ input:checked + .slider:before {
     position: relative;
     bottom: 75%;
     right: 75px;
+}
+
+@media (max-width: 380px) {
+    .switch-location {
+        right: 60px;
+    }
+    .light-theme, .dark-theme {
+        font-size: larger;
+    }
+    .slider.round {
+        height: 25px;
+        width: 50px;
+    }
+    .slider.round:before {
+        bottom: 6px;
+    }
 }
 /*------------------------------------Statement Paragraph*/
 .statement-paragraph {
