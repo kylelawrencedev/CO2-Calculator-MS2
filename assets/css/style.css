@@ -125,7 +125,11 @@ input:checked + .slider:before {
     bottom: 5px;
     font-size: x-large;
 }
-
+.switch-location {
+    position: relative;
+    bottom: 75%;
+    right: 75px;
+}
 /*------------------------------------Statement Paragraph*/
 .statement-paragraph {
     padding: 20px;
