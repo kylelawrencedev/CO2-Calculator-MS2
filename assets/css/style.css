@@ -326,15 +326,19 @@ input {
     bottom: 4rem;
 }
 .carousel-caption {
-    bottom: 0px;
+    bottom: -25px;
 }
 .carousel-indicators {
     bottom: -40px;
 }
 .bulb-img {
-    padding: 25px;
+    padding: 60px;
 }
-
+@media (max-width:1024px) {
+    .carousel-img {
+        left: 22%;
+    }
+}
 @media (max-width: 768px) {
     .offset-program-section {
         height: 450px;
@@ -357,7 +361,38 @@ input {
         padding: 45px;
     }
 }
-@media (max-width: 540px) {
+@media (max-width:600px) {
+    .offset-program-section {
+        height: 400px;
+    }
+    .carousel-inner {
+        height: 350px;
+    }
+    .carousel-img {
+        width: 300px;
+        height: 225px;
+        position: relative;
+        bottom: 0.5rem;
+    }
+    .carousel-item {
+        right: 0.5rem;
+        height: 280px;
+    }
+    .carousel-caption {
+        width: 200px;        
+        font-size: medium;
+        top: 5rem;
+        left: 5rem;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+    }
+    .bulb-img {
+        left: 23%;
+        padding: 25px;
+    }
+}
+@media (max-width: 539px) {
     .offset-program-section {
         height: 300px;
     }
@@ -378,7 +413,7 @@ input {
         top: 3rem;
     }
     .carousel-indicators {
-        bottom: 50px;
+        bottom: 10px;
     }
     .bulb-img {
         left: 23%;
@@ -389,6 +424,8 @@ input {
     background-color: transparent;
     border-color: #f2f2f2;
     border-radius: 12px;
+    padding: 10px;
+    margin: 1%;
 }
 .btn-primary:hover {
     color: #f2f2f2;
