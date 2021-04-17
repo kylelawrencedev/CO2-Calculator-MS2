@@ -149,7 +149,19 @@ input:checked + .slider:before {
 /*------------------------------------Statement Paragraph*/
 .statement-paragraph {
     padding: 20px;
-    height: 200px;
+    height: 175px;
+}
+@media (max-width: 1024px) {
+    .statement-paragraph {
+        font-size: 1rem;
+        height: 210px;
+    }
+}
+@media (max-width: 380px) {
+    .statement-paragraph {
+        font-size: 0.75rem;
+        height: 185px;
+    }
 }
 /*------------------------------------Calculator*/
 .co2-google-maps {
