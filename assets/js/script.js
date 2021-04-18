@@ -51,10 +51,17 @@ function initialiseAutoComplete() {
  * @callback initialiseAutocomeplete() - Callback for calculateRoute() function
  */
 initialiseAutoComplete(calculateRoute);
-
+/**
+ * Hides the distance calculator as soon as the page has loaded. 
+ * Only showing the google route calculator
+ */
 function hideCalculator() {
     document.getElementById('calculatorChoiceDistance').style.display = 'none'
 }
+/** Returns only one calculator when a button a pressed
+ * @param {boolean} route.style.display is set to 'none', the function will return the the other calculator
+ * @param {boolean} distance.style.display is set to 'none', the function will return the other calculator hiding the calculator the user was just on
+ */
 function calculatorDisplay() {
     let route = document.getElementById('calculatorChoiceRoute');
     let distance = document.getElementById('calculatorChoiceDistance');
@@ -68,6 +75,9 @@ function calculatorDisplay() {
         route.style.display = 'block';
     }
 }
+/** 
+ * @callback hideCalculator() - Returns only one of the calculators, hiding the other
+ */
 hideCalculator(calculatorDisplay);
 /**
  *Uses the distance from input to calcute Co2 output for a journey using either petrol/diesel or km/mi as other options
