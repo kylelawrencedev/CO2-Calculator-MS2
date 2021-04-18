@@ -1,47 +1,20 @@
 /*-------------------------------------https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp*/
 function myFunction() {
-    var element = document.body;
+    let element = document.body;
     element.classList.toggle("dark-mode")
 }
-
-// Google maps
-//javascript.js
-//set map options
-var myLatLng = { lat: 54.3781, lng: 3.4360 };
-var mapOptions = {
-    center: myLatLng,
-    zoom: 5,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-
-};
-
-//create map
-var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-
-//create a DirectionsService object to use the route method and get a result for our request
-var directionsService = new google.maps.DirectionsService();
-
-//create a DirectionsRenderer object which we will use to display the route
-var directionsDisplay = new google.maps.DirectionsRenderer();
-
-//bind the DirectionsRenderer to the map
-directionsDisplay.setMap(map);
-
-
-//define calcRoute function
 function calculateRoute() {
     //create request
-    var request = {
+    let request = {
         origin: document.getElementById("from").value,
         destination: document.getElementById("to").value,
-        travelMode: google.maps.TravelMode.DRIVING, //WALKING, BYCYCLING, TRANSIT
+        travelMode: google.maps.TravelMode.DRIVING,
         unitSystem: google.maps.UnitSystem.METRIC,
 
     }
     //pass the request to the route method
     directionsService.route(request, function (result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
-
             //Get distance and time
             const output = document.querySelector('#output');
             output.innerHTML = `<div>From: ${document.getElementById("from").value}.<br />To: ${document.getElementById("to").value}.<br /> Driving distance <i class='fas fa-road'></i> : ${result.routes[0].legs[0].distance.text}.<br />Duration <i class='fas fa-hourglass-start'></i> : ${result.routes[0].legs[0].duration.text}.</div>`;
@@ -65,24 +38,23 @@ function calculateRoute() {
         }
     });
 }
-//create autocomplete objects for all inputs
-
-let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
-let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
-/**
- * Submits users inputs for calculator to show results
- */
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("option");
-    // get attributes from selection options
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            document.getElementById('').getAttribute("data-type") === "submit"; {
-                calcCarbon();
-            }
-        });
-    }
-});
+function hideCalculator() {
+    document.getElementById('calculatorChoiceDistance').style.display = 'none'
+}
+function calculatorDisplay() {
+    let route = document.getElementById('calculatorChoiceRoute');
+    let distance = document.getElementById('calculatorChoiceDistance');
+    if (route.style.display === 'none') {
+        route.style.display = 'block';
+        distance.style.display = 'none'
+    } else if (distance.style.display === 'none') {
+        distance.style.display = 'block';
+        route.style.display = 'none'
+    } else {
+        route.style.display = 'block';
+    } 
+}
+hideCalculator(calculatorDisplay);
 /**
  *Uses the distance from input to calcute Co2 output for a journey using either petrol/diesel or km/mi as other options
  userDistance gets the value of the number the user put into the input field
@@ -91,3 +63,39 @@ function calculateCarbon() {
     let userDistance = parseInt(document.getElementById("totalDistance").value);
     carbonResult.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`
 }
+/**Sticky header smaller on scroll
+ * 
+ 
+window.onscroll = function () { this.headerScroll() };
+function headerScroll() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("header").style.height = "0";
+
+    } else {
+        document.getElementById("header").style.fontSize = "smaller";
+        document.getElementById("header").style.height = "90px";
+    }
+}
+*/
+// Google maps
+//javascript.js
+//set map options
+let MY_LAT_LANG = { lat: 54.3781, lng: 3.4360 };
+let mapOptions = {
+    center: MY_LAT_LANG,
+    zoom: 5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+//create map
+let map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+//create a DirectionsService object to use the route method and get a result for our request
+let directionsService = new google.maps.DirectionsService();
+//create a DirectionsRenderer object which we will use to display the route
+let directionsDisplay = new google.maps.DirectionsRenderer();
+//bind the DirectionsRenderer to the map
+directionsDisplay.setMap(map);
+//create autocomplete objects for all inputs
+let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
+let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
+
+/**Lazy Load Page */
