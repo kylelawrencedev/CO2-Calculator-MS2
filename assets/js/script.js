@@ -1,4 +1,5 @@
 /*-------------------------------------https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp*/
+
 function myFunction() {
     let element = document.body;
     element.classList.toggle("dark-mode")
@@ -52,7 +53,7 @@ function calculatorDisplay() {
         route.style.display = 'none'
     } else {
         route.style.display = 'block';
-    } 
+    }
 }
 hideCalculator(calculatorDisplay);
 /**
@@ -63,20 +64,21 @@ function calculateCarbon() {
     let userDistance = parseInt(document.getElementById("totalDistance").value);
     carbonResult.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`
 }
-/**Sticky header smaller on scroll
- * 
- 
+/**Sticky header transparent on scroll
+ * Operates on the user scrolling and changes the background color of the 
+ * header to transparent once the user scrolls
+ * @function headerScroll() - Add class to header element if the user scrolls down 1
+ * @function headerScroll() - Removes class from  header if user is back at the top of the page
+ * @classdesc changeColor   - Changes the color of the header to transparent
+ */
 window.onscroll = function () { this.headerScroll() };
 function headerScroll() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        document.getElementById("header").style.height = "0";
-
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        document.getElementById('header').classList.add('changeColor')
     } else {
-        document.getElementById("header").style.fontSize = "smaller";
-        document.getElementById("header").style.height = "90px";
+        document.getElementById('header').classList.remove('changeColor')
     }
 }
-*/
 // Google maps
 //javascript.js
 //set map options
