@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top" id="header">
         <nav>
             <div>
                 <a href="index.html">
@@ -61,33 +61,47 @@
         </div>
     </section>
     <section class="co2-google-maps">
-        <div>
-            <h1 class="text-center co2-calculator-heading">CO<sub>2</sub> Calculator</h1>
-        </div>
 
-        <!--Center input fields and place icons next to input fields using bootstrap d-flex-->
-        <div class="container-fluid">
-            <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                <label for="from" class="col-xs-2 control-label"><i class="far fa-play-circle icon"></i></label>
-                <input type="text" id="from" placeholder="Origin" class="form-control calc-border">
-            </div>
-            <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                <label for="to" class="col-xs-2 control-label"><i class="fas fa-flag-checkered icon"></i></label>
-                <input type="text" id="to" placeholder="Destination" class="form-control calc-border">
-            </div>
-            <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
-                <button class="btn btn-success" onclick="calculateRoute();">
-                    Calculate CO<sub>2</sub> <i class="fas fa-route"></i>
-                </button>
+        <div class="co2-calculator-heading">
+            <h1 class="text-center">CO<sub>2</sub> Calculator</h1>
+
+            <ul class="nav  col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                <div class="calculator-button">
+                    <li class="nav-item" id="calculatorRoute">
+                        <a class="nav-link active btn" role="button" onclick="calculatorDisplay()">Switch
+                            CO<sub>2</sub> Calculator</a>
+                    </li>
+                </div>
+            </ul>
+
+        </div>
+        <div id="calculatorChoiceRoute">
+            <!--Center input fields and place icons next to input fields using bootstrap d-flex-->
+            <div class="container-fluid">
+                <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <label for="from" class="col-xs-2 control-label"><i class="far fa-play-circle icon"></i></label>
+                    <input type="text" id="from" placeholder="Origin" class="form-control calc-border">
+                </div>
+                <div class="form-group col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-flag-checkered icon"></i></label>
+                    <input type="text" id="to" placeholder="Destination" class="form-control calc-border">
+                </div>
+                <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center">
+                    <button class="btn btn-success" onclick="calculateRoute();">
+                        Calculate CO<sub>2</sub> <i class="fas fa-route"></i>
+                    </button>
+                </div>
+                <div id="output">
+                </div>
+                <div id="googleMap">
+                </div>
+                <div id="calculation">
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div id="output">
-            </div>
-            <div id="googleMap">
-            </div>
-            <div id="calculation">
-            </div>
+        <div class="container-fluid" id="calculatorChoiceDistance">
+            <p> This calculator is ideal if you know the distance of your trip but are not sure what the route was. All you need to do is enter the distance and your preferred choice of distance type and fuel type. This will then show you your CO <sub>2</sub> output from that trip.
+            </p>
             <div class="myCalculator">
                 <div class="col-xs-offset-2 col-xs-10 d-flex justify-content-center calculatorSpacing">
                     <input type="number" id="totalDistance" class="calc-border" name="myDistance"
