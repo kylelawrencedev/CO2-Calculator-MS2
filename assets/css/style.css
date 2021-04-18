@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&family=Lora&display=swap');
 
 /*------------------------------------General*/
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'B612', sans-serif;
 }
@@ -29,6 +32,7 @@ a {
 /*------------------------------------Header*/
 header {
     filter: brightness(0.9);
+    height: 90px;
 }
 nav {
     height: 85px;
@@ -164,21 +168,34 @@ input:checked + .slider:before {
     }
 }
 /*------------------------------------Calculator*/
+.nav-link {
+    color: #f2f2f2;
+    border-color: #182628;
+    padding: 10px;
+}
+.nav-link:hover {
+    color: #f2f2f2;
+    filter: brightness(0.7);
+}
 .co2-google-maps {
     filter: brightness(0.9);
     padding: 20px 5%;
 }
 .co2-calculator-heading {
     font-weight: 800;
-    padding: 15px;
+    padding: 25px;
 }
 .calculator-text {
     width: 350px;
+}
+.calculator-button {
+    padding: 10px;
 }
 .userCalculator {
     text-align: center;
     font-size: larger;
 }
+
 
 /*------------------------------------Code Taken from bootstrap*/
 .form-control {
