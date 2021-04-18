@@ -4,6 +4,7 @@ function myFunction() {
     let element = document.body;
     element.classList.toggle("dark-mode")
 }
+
 function calculateRoute() {
     //create request
     let request = {
@@ -39,6 +40,18 @@ function calculateRoute() {
         }
     });
 }
+/**
+ * Returns the users input from elements 'from' and 'to'
+ */
+function initialiseAutoComplete() {
+    let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
+    let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
+}
+/**
+ * @callback initialiseAutocomeplete() - Callback for calculateRoute() function
+ */
+initialiseAutoComplete(calculateRoute);
+
 function hideCalculator() {
     document.getElementById('calculatorChoiceDistance').style.display = 'none'
 }
@@ -96,8 +109,5 @@ let directionsService = new google.maps.DirectionsService();
 let directionsDisplay = new google.maps.DirectionsRenderer();
 //bind the DirectionsRenderer to the map
 directionsDisplay.setMap(map);
-//create autocomplete objects for all inputs
-let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
-let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
 
 /**Lazy Load Page */
