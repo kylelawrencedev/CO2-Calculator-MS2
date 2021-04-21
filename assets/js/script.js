@@ -55,8 +55,8 @@ function calculateRoute() {
  * Returns the users input from elements 'from' and 'to'
  */
 function initialiseAutoComplete() {
-    let autocomplete1 = new google.maps.places.Autocomplete(document.getElementById("from"));
-    let autocomplete2 = new google.maps.places.Autocomplete(document.getElementById("to"));
+    new google.maps.places.Autocomplete(document.getElementById("from"));
+    new google.maps.places.Autocomplete(document.getElementById("to"));
 }
 /**
  * @callback initialiseAutocomeplete() - Callback for calculateRoute() function
@@ -141,6 +141,3 @@ let directionsDisplay = new google.maps.DirectionsRenderer();
  * bind the DirectionsRenderer to the map
  */
 directionsDisplay.setMap(map);
-
-
-/**Lazy Load Page */
