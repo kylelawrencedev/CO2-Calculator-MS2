@@ -119,10 +119,10 @@ function headerScroll() {
  * MY_LAT_LANG returns the United Kingdom on the google maps
  * mapOptions returns the google maps and has a zoom of 5 on the map to show the whole of the United Kingdom
  */
-let MY_LAT_LANG = { lat: 54.3781, lng: 3.4360 };
+let MY_LAT_LANG = { lat: 54.3781, lng: 0.4360 };
 let mapOptions = {
     center: MY_LAT_LANG,
-    zoom: 5,
+    zoom: 4.5,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 /**
