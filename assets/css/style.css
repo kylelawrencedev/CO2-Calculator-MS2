@@ -164,7 +164,7 @@ input:checked + .slider:before {
 @media (max-width: 380px) {
     .statement-paragraph {
         font-size: 0.75rem;
-        height: 185px;
+        height: 165px;
     }
 }
 /*------------------------------------Calculator*/
