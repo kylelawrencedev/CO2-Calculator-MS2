@@ -591,12 +591,16 @@ footer {
     -webkit-transition: background 0.4s ease-in, color 0.4s ease-in;
 }
 /*------------------------------------https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp*/
-header {
+header .changeColor{
     color: #182628;
     background-color: #f2f2f2;
 }
+.dark-mode header.changeColor {
+    color: #f2f2f2;
+    background-color: transparent;
+}
 .dark-mode header {
-    color: #182628;
+    color: #f2f2f2;
     background:#65CCB8
 }
 .statement-paragraph {
