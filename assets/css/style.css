@@ -367,9 +367,6 @@ input {
     bottom: -25px;
     font-size: 1.25rem;
 }
-.carousel-indicators {
-    bottom: -40px;
-}
 .bulb-img {
     padding: 60px;
 }
@@ -415,9 +412,7 @@ input {
         top: 12rem;
         left: 9rem;
     }
-    .carousel-indicators {
-        bottom: 10px;
-    }
+
     .bulb-img {
         padding: 45px;
     }
