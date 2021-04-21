@@ -1,12 +1,19 @@
-/*-------------------------------------https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp*/
-
-function myFunction() {
+/**
+ * Creates the theme toggle to change the color of the page from light them to dark theme and visa-versa
+ * @param element - Gets the whole document body to make changes
+ * @param 'dark-mode' - Gets the styling created in style.css and toggles this class to each relevant element
+ * @see https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+ */
+function toggleTheme() {
     let element = document.body;
     element.classList.toggle("dark-mode")
 }
-
+/** Returns the calculated route for the user
+ * @param {object} request - Gets the value of the users input in the from and to ID's
+ * @param {object} request - travelMode sets the google maps to show a route for driving
+ * @param {object} request - unitSystem sets the distance that is shown to be shown in kilometers
+ */
 function calculateRoute() {
-    //create request
     let request = {
         origin: document.getElementById("from").value,
         destination: document.getElementById("to").value,
@@ -14,28 +21,32 @@ function calculateRoute() {
         unitSystem: google.maps.UnitSystem.METRIC,
 
     }
-    //pass the request to the route method
+    /** Returns the route or shows an error message if an invalid route is put in
+     * @param if - Returns a route for the user if they have put in a valid route.
+     * @param status - if the user has put in a valid route then google maps will show the route in output.innerHTML
+     * @const output - Displays the users route with distance and time shown
+     * @const calculation - Uses the users route distance value to show the users CO2 output
+     * @param directionsDisplay - set the directions on the map
+     * @param else - if the user inputs an invalid route an error message will show and will reset the map the MY_LAT-LONG
+     */
     directionsService.route(request, function (result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
-            //Get distance and time
             const output = document.querySelector('#output');
             output.innerHTML = `<div>From: ${document.getElementById("from").value}.<br />To: ${document.getElementById("to").value}.<br /> Driving distance <i class='fas fa-road'></i> : ${result.routes[0].legs[0].distance.text}.<br />Duration <i class='fas fa-hourglass-start'></i> : ${result.routes[0].legs[0].duration.text}.</div>`;
-
-            // Calculate CO2
-            // My own code
-            calculation = document.querySelector('#calculation');
+            /** Returns calculation for CO2 output
+             * @const calculation - distance.value from google is interpreted in meters, this has to be divided by 1000 to get the value in km's. 
+             * @const calculation - This value is then multiplied by 0.12 for petrol and 0.132 for diesel
+             */
+            const calculation = document.querySelector('#calculation');
             calculation.innerHTML = `<div>CO<sub>2</sub>: ${((result.routes[0].legs[0].distance.value / 1000) * 0.12).toFixed(2)} kg of CO<sub>2</sub> for Petrol <br>CO<sub>2</sub>: ${((result.routes[0].legs[0].distance.value / 1000) * 0.132).toFixed(2)} kg of CO<sub>2</sub> for Diesel </div>`;
-
-            //display route
             directionsDisplay.setDirections(result);
         }
         else {
-            //delete route from map
+            /**
+             * @const output - Shows error message in div with red background
+             */
             directionsDisplay.setDirections({ routes: [] });
-            //center map in London
-            map.setCenter(myLatLng);
-
-            //show error message
+            map.setCenter(MY_LAT_LANG);
             output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";
         }
     });
@@ -90,6 +101,8 @@ function calculateCarbon() {
 /**Sticky header transparent on scroll
  * Operates on the user scrolling and changes the background color of the 
  * header to transparent once the user scrolls
+ * @param window.onscroll - the event for when a user scrolls
+ * @this function - puts window.onscroll with with function headerScroll()
  * @function headerScroll() - Add class to header element if the user scrolls down 1
  * @function headerScroll() - Removes class from  header if user is back at the top of the page
  * @classdesc changeColor   - Changes the color of the header to transparent
@@ -102,22 +115,32 @@ function headerScroll() {
         document.getElementById('header').classList.remove('changeColor')
     }
 }
-// Google maps
-//javascript.js
-//set map options
+/**
+ * MY_LAT_LANG returns the United Kingdom on the google maps
+ * mapOptions returns the google maps and has a zoom of 5 on the map to show the whole of the United Kingdom
+ */
 let MY_LAT_LANG = { lat: 54.3781, lng: 3.4360 };
 let mapOptions = {
     center: MY_LAT_LANG,
     zoom: 5,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-//create map
+/**
+ * map returns the google map from the API
+ */
 let map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-//create a DirectionsService object to use the route method and get a result for our request
+/**
+ * create a DirectionsService object from the google API which then uses the route method
+ */
 let directionsService = new google.maps.DirectionsService();
-//create a DirectionsRenderer object which we will use to display the route
+/**
+ * create a DirectionsRenderer object which we will use to display the route
+ */
 let directionsDisplay = new google.maps.DirectionsRenderer();
-//bind the DirectionsRenderer to the map
+/**
+ * bind the DirectionsRenderer to the map
+ */
 directionsDisplay.setMap(map);
+
 
 /**Lazy Load Page */
