@@ -462,7 +462,7 @@ input {
 }
 @media (max-width:400px) {
 .offset-program-section {
-        height: 285px;
+        height: 295px;
     }
     .carousel-inner {
         height: 275px;
@@ -473,6 +473,7 @@ input {
         position: relative;
         filter: drop-shadow(2px 4px 8px #585858);
         bottom: 1rem;
+        left: 5rem;
     }
     .carousel-item {
         right: 0.5rem;
@@ -481,7 +482,7 @@ input {
     .carousel-caption {
         width: 175px;        
         font-size: 1rem;
-        top: 3rem;
+        top: 2.5rem;
         left: 2.75rem;
     }
     .bulb-img {
