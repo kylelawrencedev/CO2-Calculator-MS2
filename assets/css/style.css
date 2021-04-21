@@ -331,7 +331,7 @@ input {
 }
 @media (max-width: 380px) {
     .calc-border {
-        width: 75%;
+        width: 55%;
     }
     #googleMap {
         height: 250px;
@@ -400,7 +400,7 @@ input {
         width: 400px;
         height: 300px;
         position: relative;
-        left: 5rem; 
+        left: 11rem; 
         bottom: 3rem;      
     }
     .carousel-caption {
@@ -415,9 +415,8 @@ input {
     .bulb-img {
         padding: 45px;
     }
-
 }
-@media (max-width:539px) {
+@media (max-width:540px) {
 .offset-program-section {
         height: 285px;
     }
@@ -430,6 +429,7 @@ input {
         position: relative;
         filter: drop-shadow(2px 4px 8px #585858);
         bottom: 2rem;
+        left: 9rem;
     }
     .carousel-item {
         right: 0.5rem;
@@ -439,10 +439,9 @@ input {
         width: 200px;        
         font-size: 1rem;
         top: 3rem;
-        left: 3.25rem;
+        left: 5.25rem;
     }
     .bulb-img {
-        left: 5rem;
         padding: 35px;
     }
     .link-btn {
