@@ -29,7 +29,7 @@
             </div>
             <div class="switch-location">
                 <label class="switch">
-                    <input type="checkbox" onclick="myFunction()">
+                    <input type="checkbox" onclick="themeToggle()">
                     <span class="slider round">
                         <i class="far fa-lightbulb light-theme"></i>
                         <i class="fas fa-lightbulb dark-theme"></i>
@@ -112,7 +112,7 @@
                     class="col-xs-offset-2 col-xs-10 d-flex justify-content-center calculatorSpacing">
                     <select class="custom-select my-1 mr-sm-2 calc-border" id="inlineFormCustomSelectPref">
                         <option selected>Distance Type...</option>
-                        <option value="0.621371" id="Miles">Miles</option>
+                        <option value="1.60934" id="Miles">Miles</option>
                         <option value="1" id="Kilometers">Kilometers</option>
                     </select>
                 </div>
@@ -258,13 +258,14 @@
     </footer>
     <!---Google maps API-->
     <script 
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&libraries=places"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHyCRJaxWY3e_azOmciazJlLZYPp8i028&libraries=places" async defer></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
