@@ -117,10 +117,10 @@ function headerScroll() {
 }
 /**
  * MY_LAT_LANG returns the United Kingdom on the google maps
- * mapOptions returns the google maps and has a zoom of 5 on the map to show the whole of the United Kingdom
+ * MAP_OPTIONS returns the google maps and has a zoom of 5 on the map to show the whole of the United Kingdom
  */
 const MY_LAT_LANG = { lat: 54.3781, lng: 0.4360 };
-let mapOptions = {
+const MAP_OPTIONS = {
     center: MY_LAT_LANG,
     zoom: 4.5,
     mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -128,7 +128,7 @@ let mapOptions = {
 /**
  * map returns the google map from the API
  */
-const map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+const map = new google.maps.Map(document.getElementById('googleMap'), MAP_OPTIONS);
 /**
  * create a DirectionsService object from the google API which then uses the route method
  */
