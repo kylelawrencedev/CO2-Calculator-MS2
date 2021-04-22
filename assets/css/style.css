@@ -1,5 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @import url('https://fonts.googleapis.com/css2?family=B612&family=Lora&display=swap');
-
 /*------------------------------------General*/
 html {
     scroll-behavior: smooth;
@@ -26,17 +31,14 @@ a {
     margin-right: 0px!important;
 }
 }
-/*------------------------------------Colors*/
-
-
 /*------------------------------------Header*/
 nav {
     height: 85px;
     padding: 5px;
 }
-
 .logo {
-    filter: drop-shadow(2px 4px 8px #585858);
+    -webkit-filter: drop-shadow(2px 4px 8px #585858);
+            filter: drop-shadow(2px 4px 8px #585858);
     width: 75px;
     height: 75px;
 }
@@ -54,7 +56,6 @@ nav {
     top: 45px;
     left: 65px;
 }
-
 /*------------------------------------Toggle Switch*/
 /*------------------------------------https://www.w3schools.com/howto/howto_css_switch.asp*/
 switch {
@@ -77,9 +78,9 @@ switch {
   bottom: 0;
   background-color: #65CCB8;
   -webkit-transition: .6s;
+  -o-transition: .6s;
   transition: .6s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -89,6 +90,7 @@ switch {
   bottom: 4px;
   background-color: white;
   -webkit-transition: .6s;
+  -o-transition: .6s;
   transition: .6s;
 }
 input:checked + .slider {
@@ -96,7 +98,8 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 5px #f2f2f2;
+  -webkit-box-shadow: 0 0 5px #f2f2f2;
+          box-shadow: 0 0 5px #f2f2f2;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(20px);
@@ -112,14 +115,16 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .light-theme {
-    filter: drop-shadow(2px 4px 2px #585858);
+    -webkit-filter: drop-shadow(2px 4px 2px #585858);
+            filter: drop-shadow(2px 4px 2px #585858);
     position: relative;
     right: 30px;
     bottom: 5px;
     font-size: x-large;
 }
 .dark-theme {
-    filter: drop-shadow(2px 4px 2px #585858);
+    -webkit-filter: drop-shadow(2px 4px 2px #585858);
+            filter: drop-shadow(2px 4px 2px #585858);
     position: relative;
     left: 38px;
     bottom: 5px;
@@ -130,7 +135,6 @@ input:checked + .slider:before {
     bottom: 75%;
     right: 75px;
 }
-
 @media (max-width: 380px) {
     .switch-location {
         right: 60px;
@@ -181,10 +185,12 @@ input:checked + .slider:before {
 }
 .nav-link:hover {
     color: #f2f2f2;
-    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
 }
 .co2-google-maps {
-    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
     padding: 20px 5%;
 }
 .co2-calculator-heading {
@@ -201,8 +207,6 @@ input:checked + .slider:before {
     text-align: center;
     font-size: larger;
 }
-
-
 /*------------------------------------Code Taken from bootstrap*/
 .form-control {
     display: block;
@@ -216,13 +220,18 @@ input:checked + .slider:before {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 12px;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
     border-radius: 12px;
 }
 .shadow {
-    box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.2)!important;
+    -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.2)!important;
+            box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.2)!important;
     border-radius: 12px;
 }
 /*------------------------------------Google Maps*/
@@ -241,13 +250,15 @@ input:checked + .slider:before {
 /*Submit Button*/
 .btn {
     background-color: #182628;
-    filter: drop-shadow(0px 0px 4px #585858);
+    -webkit-filter: drop-shadow(0px 0px 4px #585858);
+            filter: drop-shadow(0px 0px 4px #585858);
     width: 80%;
     border-radius: 12px;
 }
 .btn:hover {
     background-color: #182628;
-    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
 }
 .btn:focus {
     color: #f2f2f2;
@@ -259,20 +270,18 @@ input:checked + .slider:before {
   width: 80%;
   height: 400px;
   margin: 10px auto;
-  filter: drop-shadow(0px 0px 4px #585858);
+  -webkit-filter: drop-shadow(0px 0px 4px #585858);
+          filter: drop-shadow(0px 0px 4px #585858);
 }
-
 /*output box*/
 #output, #calculation {
   text-align: center;
   font-size: 2rem;
   margin: 20px auto;
 }
-
 #mode {
   color: #182628;
 }
-
 sub {
     bottom: -.25rem;
     font-size: 75%;
@@ -288,16 +297,17 @@ sub {
     }
 }
 /* Optional: Makes the sample page fill the window. */
-
 .controls {
   margin-top: 10px;
   border: 1px solid transparent;
   border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 32px;
   outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 /*------------------------------------Calculator*/
 /*------------------------------------Place calculator submit button in the middle of the screen*/
@@ -353,7 +363,8 @@ input {
     height: 475px;
 }
 .carousel-img {     
-    filter: drop-shadow(2px 4px 8px #585858);
+    -webkit-filter: drop-shadow(2px 4px 8px #585858);     
+            filter: drop-shadow(2px 4px 8px #585858);
     width: 550px;
     height: 400px;
     position: relative;
@@ -384,10 +395,12 @@ input {
 .btn-primary:hover {
     color: #f2f2f2;
     border-color: #f2f2f2;
-    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
 }
-
 @media (max-width: 768px) {
     .offset-program-section {
         height: 475px;
@@ -396,7 +409,8 @@ input {
         height: 440px;
     }
     .carousel-img {
-        filter: drop-shadow(2px 4px 8px #585858);
+        -webkit-filter: drop-shadow(2px 4px 8px #585858);
+                filter: drop-shadow(2px 4px 8px #585858);
         width: 400px;
         height: 300px;
         position: relative; 
@@ -423,7 +437,8 @@ input {
         width: 250px;
         height: 170px;
         position: relative;
-        filter: drop-shadow(2px 4px 8px #585858);
+        -webkit-filter: drop-shadow(2px 4px 8px #585858);
+                filter: drop-shadow(2px 4px 8px #585858);
         bottom: 2rem;
     }
     .carousel-item {
@@ -456,7 +471,8 @@ input {
         width: 200px;
         height: 130px;
         position: relative;
-        filter: drop-shadow(2px 4px 8px #585858);
+        -webkit-filter: drop-shadow(2px 4px 8px #585858);
+                filter: drop-shadow(2px 4px 8px #585858);
         bottom: 1rem;
     }
     .carousel-item {
@@ -489,7 +505,8 @@ input {
         width: 200px;
         height: 130px;
         position: relative;
-        filter: drop-shadow(2px 4px 8px #585858);
+        -webkit-filter: drop-shadow(2px 4px 8px #585858);
+                filter: drop-shadow(2px 4px 8px #585858);
         bottom: 0.5em;
     }
     .carousel-item {
@@ -532,7 +549,6 @@ input {
         width: 70%;
     }
 }
-
 /*------------------------------------Footer*/
 footer {
     height: 140px;
@@ -551,7 +567,6 @@ footer {
     padding: 5px;
     letter-spacing: 15px;
 }
-
 .col-sm-4 {
     max-width: 100%;
 }
@@ -562,20 +577,24 @@ footer {
 footer {
         height: 135px;
     }
-
 .footer-link-colour:hover {
     color: #65CCB8;
-    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
     -moz-transition: 0.4s ease-in;
 }
 /*------------------------------------Move the social links button down by 1px when hovered*/
 .fab:hover {
-    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+            transform: translateY(1px);
 }
-
 /*------------------------------------Theme Selection*/
 .dark-mode, header, .statement-paragraph, .co2-google-maps, .offset-program-section, footer, .footer-link-colour{
+    -o-transition: background 0.4s ease-in, color 0.4s ease-in;
     transition: background 0.4s ease-in, color 0.4s ease-in;
     -webkit-transition: background 0.4s ease-in, color 0.4s ease-in;
 }
