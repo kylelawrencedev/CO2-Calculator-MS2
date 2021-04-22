@@ -20,6 +20,12 @@ This site is intended to start a person journey to helping the environment and o
 with a simple subscription. Millions of people have subscriptions to Amazon and Netflix, but these subscriptions help our planet.
 
 ---
+## **Wireframes**
+### Desktop
+![Wireframes for desktop](assets/wireframes/co2-calculator-desktop-wireframes.png)
+### Mobile
+![Wireframes for mobile](assets/wireframes/co2-calculator-mobile-wireframes.png)
+___
 ## **Typography & Color Scheme**
 ### Typography
 
@@ -161,13 +167,6 @@ than electricity sourced from coal.
 1. Offer visitors the option to open their own account. This account will allow them to save their trips. Once a trip is saved
 the total CO2 emissions from that trip is stored and when another trip is saved the CO2 emissions from both trips are added together.
 The total emissions from all the user’s trips are shown at the bottom of the users account page with the saved trips.
----
-## **Wireframes**
-
----
-## **Testing**
-
----
 ## **Technology**
 
 ---
@@ -175,6 +174,3 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 https://www.brainyquote.com/quotes/greta_thunburg_1088216?src=t_emissions (greta quote)
 https://www.subpng.com/png-bctacm/ shell logo
 https://thereverend.co.uk/blog/wp-content/uploads/2019/01/Bulb-logo-pink.png bulb logo
-
-
----
