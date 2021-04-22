@@ -29,7 +29,7 @@ function calculateRoute() {
      * @param directionsDisplay - set the directions on the map
      * @param else - if the user inputs an invalid route an error message will show and will reset the map the MY_LAT-LONG
      */
-    directionsService.route(request, function (result, status) {
+    DIRECTIONS_SERVICE.route(request, function (result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
             const output = document.querySelector('#output');
             output.innerHTML = `<div>From: ${document.getElementById("from").value}.<br />To: ${document.getElementById("to").value}.<br /> Driving distance <i class='fas fa-road'></i> : ${result.routes[0].legs[0].distance.text}.<br />Duration <i class='fas fa-hourglass-start'></i> : ${result.routes[0].legs[0].duration.text}.</div>`;
@@ -128,11 +128,11 @@ let mapOptions = {
 /**
  * map returns the google map from the API
  */
-let map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+const map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 /**
  * create a DirectionsService object from the google API which then uses the route method
  */
-let directionsService = new google.maps.DirectionsService();
+const DIRECTIONS_SERVICE = new google.maps.DirectionsService();
 /**
  * create a DirectionsRenderer object which we will use to display the route
  */
