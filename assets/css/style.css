@@ -357,11 +357,11 @@ input {
     width: 550px;
     height: 400px;
     position: relative;
-    left: 28%;
+    margin: 0 auto;
     bottom: 5rem;
 }
 .carousel-inner {
-    height: 415px;
+    height: 450px;
 }
 .carousel-caption {
     bottom: -25px;
@@ -369,6 +369,7 @@ input {
 }
 .bulb-img {
     padding: 60px;
+    margin: 0 auto;
 }
 .link-btn {
     background-color: transparent;
@@ -386,11 +387,7 @@ input {
     filter: brightness(0.7);
     transition: 0.5s ease-in;
 }
-@media (max-width:1024px) {
-    .carousel-img {
-        left: 22%;
-    }
-}
+
 @media (max-width: 768px) {
     .offset-program-section {
         height: 475px;
@@ -402,8 +399,7 @@ input {
         filter: drop-shadow(2px 4px 8px #585858);
         width: 400px;
         height: 300px;
-        position: relative;
-        left: 11rem; 
+        position: relative; 
         bottom: 3rem;      
     }
     .carousel-caption {
@@ -412,7 +408,6 @@ input {
         top: 12rem;
         left: 9rem;
     }
-
     .bulb-img {
         padding: 45px;
     }
@@ -430,7 +425,6 @@ input {
         position: relative;
         filter: drop-shadow(2px 4px 8px #585858);
         bottom: 2rem;
-        left: 9rem;
     }
     .carousel-item {
         right: 0.5rem;
@@ -464,7 +458,6 @@ input {
         position: relative;
         filter: drop-shadow(2px 4px 8px #585858);
         bottom: 1rem;
-        left: 5rem;
     }
     .carousel-item {
         right: 0.5rem;
@@ -477,7 +470,6 @@ input {
         left: 2.75rem;
     }
     .bulb-img {
-        left: 23%;
         padding: 25px;
     }
     .link-btn {
@@ -511,7 +503,6 @@ input {
         left: 15%;
     }
     .bulb-img {
-        left: 23%;
         padding: 25px;
     }
     .link-btn {
@@ -526,9 +517,6 @@ input {
     }
     .carousel-inner {
         height: 270px;
-    }
-    .carousel-img {
-        left: 2rem;
     }
     .carousel-item {
         right: 0.25rem;
