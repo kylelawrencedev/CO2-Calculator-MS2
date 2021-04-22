@@ -5,7 +5,7 @@
  */
 function toggleTheme() {
     let element = document.body;
-    element.classList.toggle("dark-mode")
+    element.classList.toggle("dark-mode");
 }
 /** Returns the calculated route for the user, if no route available the map will reset and an error message will show
  * @function calculateRoute() - Gets the value of the users input in the from and to ID's
@@ -20,7 +20,7 @@ function calculateRoute() {
         travelMode: google.maps.TravelMode.DRIVING,
         unitSystem: google.maps.UnitSystem.METRIC,
 
-    }
+    };
     DIRECTIONS_SERVICE.route(request, function (result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
             const output = document.querySelector('#output');
@@ -31,9 +31,10 @@ function calculateRoute() {
             directionsDisplay.setDirections(result);
         }
         else {
+            const OUTPUT = document.querySelector('#output');
             directionsDisplay.setDirections({ routes: [] });
             map.setCenter(MY_LAT_LANG);
-            output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";
+            OUTPUT.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";
         }
     });
 }
@@ -45,7 +46,7 @@ function initialiseAutoComplete() {
 initialiseAutoComplete(calculateRoute);
 // Hides the distance calculator as soon as the page has loaded. Only showing the google route calculator
 function hideCalculator() {
-    document.getElementById('calculatorChoiceDistance').style.display = 'none'
+    document.getElementById('calculatorChoiceDistance').style.display = 'none';
 }
 /** Returns only one calculator when a button a pressed
  * @function calculatorDisplay() - route.style.display is set to 'none', the function will return the the other calculator
@@ -56,10 +57,10 @@ function calculatorDisplay() {
     let distance = document.getElementById('calculatorChoiceDistance');
     if (route.style.display === 'none') {
         route.style.display = 'block';
-        distance.style.display = 'none'
+        distance.style.display = 'none';
     } else if (distance.style.display === 'none') {
         distance.style.display = 'block';
-        route.style.display = 'none'
+        route.style.display = 'none';
     } else {
         route.style.display = 'block';
     }
@@ -68,8 +69,9 @@ hideCalculator(calculatorDisplay);
 //Uses the distance from input to calcute Co2 output for a journey using either petrol/diesel or km/mi as other options. 
 // userDistance gets the value of the number the user put into the input field
 function calculateCarbon() {
+    const CARBON_RESULT = document.querySelector('#calculation');
     let userDistance = parseInt(document.getElementById("totalDistance").value);
-    carbonResult.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`
+    CARBON_RESULT.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`;
 }
 /**Sticky header transparent on scroll
  * Operates on the user scrolling and changes the background color of the 
@@ -79,14 +81,15 @@ function calculateCarbon() {
  * @function headerScroll() - Removes class from  header if user is back at the top of the page
  * @classdesc changeColor   - Changes the color of the header to transparent
  */
-window.onscroll = function () { this.headerScroll() };
+window.onscroll = function () { this.headerScroll(); };
 function headerScroll() {
     if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-        document.getElementById('header').classList.add('changeColor')
+        document.getElementById('header').classList.add('changeColor');
     } else {
-        document.getElementById('header').classList.remove('changeColor')
+        document.getElementById('header').classList.remove('changeColor');
     }
 }
+headerScroll();
 // MY_LAT_LANG returns the United Kingdom on the google maps
 // MAP_OPTIONS returns the google maps and has a zoom of 5 on the map to show the whole of the United Kingdom
 const MY_LAT_LANG = { lat: 54.3781, lng: 0.4360 };
