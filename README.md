@@ -190,7 +190,25 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 
 [Cloning a repository from GitHub to GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)
 ## **Technology**
-
+### 1. Languages
+* HTML5
+* CSS3
+* JavaScript
+### 2. Integration
+* [Bootstrap](https://getbootstrap.com/)
+* [FontAwesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/) 
+* [Google Maps API](https://developers.google.com/maps)
+* [JavaScript Library/jQuery](https://jquery.com/)
+* [Polyfill](https://polyfill.io/v3/)
+### 3. Version Control & Repository
+* [GitHub](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+### 4. Other 
+* [CSS Autoprefixer](https://autoprefixer.github.io/)
+* [JSHint](https://jshint.com/)
+* [W3C HTML Validator](https://validator.w3.org/)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 ---
 ## **Credits**
 https://www.brainyquote.com/quotes/greta_thunburg_1088216?src=t_emissions (greta quote)
