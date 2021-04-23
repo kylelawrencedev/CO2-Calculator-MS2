@@ -35,8 +35,18 @@
 # Testing Writeup
 ## Websites used to Validate Code
 ### W3C HTML & CSS
-
+#### HTML 
+Error for usings lists when not needed for the calculator button
+* Made an unordered list and placed a div within that div. Changed all the lists to divs
+Error for putting loading='lazy'
+* Put loading='lazy' into the div below the image by accident. Moved it to the img
+Got a error for the social links in the footer
+* I had put all the social media icons into a '<ul></ul>' and then put another '<ul></ul>' inside the first which is not allowed. I had to put the first three icons into a unordered list and the next three into their own unordered list. With '<li></li>' within each unordered list 3 times.
+#### CSS
+All code passed without any changes needed
 ### JSHint 
-
-
-
+Pasted code into JSHint and got several warnings:
+* I had forgot to put in a ';' in several places
+* autocomplete1 and autocomplete2 were not needed as they were not used anywhere else in the code so they were removed
+* Got two warnings for the use of 'new'. This is needed for the google maps API autocomplete. When removed the autocomplete function does not work.
+* Undefined Variables: carbonResult was undefined. Created const CARBON_RESULT with a querySelector for id='carbonResult'
