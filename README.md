@@ -189,6 +189,8 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 * Click on "Open with GitHub Desktop"
 
 [Cloning a repository from GitHub to GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)
+
+--- 
 ## **Technology**
 ### 1. Languages
 * HTML5
