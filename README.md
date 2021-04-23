@@ -16,25 +16,27 @@ Some sites that I have seen show the total cost of the trip and then show what t
 can by to offset their single trip. I think this is the wrong way to go about it because this means that person. 
 now needs to keep coming back and calculating each trip they take. I have tried to find websites that offer subscriptions.
 that cost a certain amount each month and this means that person does not need to constantly worry about calculating each trip.
-This site is intended to start a person journey to helping the environment and opening their eyes to new ways to help the environment.
+This site is intended to start a persons journey to helping the environment and opening their eyes to new ways to help the environment.
 with a simple subscription. Millions of people have subscriptions to Amazon and Netflix, but these subscriptions help our planet.
 
 ---
 ## **Wireframes**
 ### Desktop
-[Wireframes for desktop](docs/wireframes/co2-calculator-desktop-wireframes.png)
+[Wireframes](docs/wireframes/co2-calculator-desktop-wireframes.png) for desktop
 ### Mobile
-[Wireframes for mobile](docs/wireframes/co2-calculator-mobile-wireframes.png)
-___
+[Wireframes](docs/wireframes/co2-calculator-mobile-wireframes.png) for mobile
+
+---
 ## **Typography & Color Scheme**
 ### Typography
 
 1. Main Font - B612
 
-1. Backup Font - Lora
-
 1. Last Ditch Font - Sans-serif
 
+Chose B612 due to it look formal yet still playful with some curves. Letters are rigged and sharp with a little flick at the end of letters such as 'l' & 't' and the slight curve at the top of the letter 'i' made this font stand out to me.
+
+---
 ### Color Scheme - Dark mode
 **Header:** 
 * Background Color - 65CCB8
@@ -53,19 +55,14 @@ ___
 
 * Calculator Fuel type, co2 per mile, start and end location Background Color - F2F2F2
 
-* Calculator Fuel type, co2 per mile, start and end location Font Color - 182628
-
-* Calculator Results DIV Background Color - 182628
-
-* Calculator Results DIV Font Color - 57BA98
+* Calculator Results DIV Font Color - F2F2F2
 
 **Footer**
 
 * Background Color - 182628
 
 * Contact Us and Social Links Color - 65CCB8
-
-
+---
 ### Color Scheme - Light mode
 **Header** 
 * Background Color - F2F2F2
@@ -84,8 +81,6 @@ ___
 * Calculator Fuel type, co2 per mile, start and end location Background Color - 3B945E
 
 * Calculator Fuel type, co2 per mile, start and end location Font Color - F2F2F2
-
-* Calculator Results DIV Background Color - 3B945E
 
 * Calculator Results DIV Font Color - 182628
 
