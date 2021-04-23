@@ -147,15 +147,21 @@ This will show the Google Directions API, the input from the Start and End locat
 
 *Mobile :*
 
-Middle : Logo for each initiative will be shown with a snippet of text shown as a preview. Users will click on an image and it will open.
+* Middle : Logo for each initiative will be shown with a snippet of text shown as a preview. Users will click on an image and it will open.
 an accordion of all the text explaining the initiative. Link will be shown at the end of the text to the website.
 
 **Footer**
 * Right Side : All social media links
 
 ---
-## **Future Features**
+### Design Changes
+* Users can now change between two calculators. One calculator for when they know their origin and destination and another for when they want to see their CO2 emissions for certain distances.
+* Users can select Distance type and Fuel type only for one of the calculators. 
+* Offset iniatives displayed on a carousel, with content being hidden on smaller devices.
+* Social Media icons moved to middle of screen.
+* Header becomes transparent when the user scrolls down
 
+## **Future Features**
 1. Show all Shell petrol stations along the visitor’s route as they are the only petrol company in the UK that offsets 
 customers fuel purchases. If another company offers this option, they would be added to the routes.
 
@@ -167,7 +173,6 @@ than electricity sourced from coal.
 1. Offer visitors the option to open their own account. This account will allow them to save their trips. Once a trip is saved
 the total CO2 emissions from that trip is stored and when another trip is saved the CO2 emissions from both trips are added together.
 The total emissions from all the user’s trips are shown at the bottom of the users account page with the saved trips.
-
 ---
 ## Deployment 
  When on GitHub navigate to [CO2-Calculator-MS2](https://github.com/kylelawrencedev/CO2-Calculator-MS2) repository. Once at the repository under the name will be 'Settings', which must be clicked.
@@ -181,15 +186,13 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 "If you choose the /docs folder on any branch as your publishing source, then later remove the /docs folder from that branch in your repository, your site won't build and you'll get a page build error message for a missing /docs folder." 
 [Configuring a publishing source](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-# Cloning my repository
+## Cloning my repository
 
 * Go to [CO2-Calculator-MS2](https://github.com/kylelawrencedev/CO2-Calculator-MS2) repository
 * Above where all the files are listed there will be a button that says "Code"
 * When clicked a drop-down menu will appear. 
 * Click on "Open with GitHub Desktop"
-
 [Cloning a repository from GitHub to GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)
-
 --- 
 ## **Technology**
 ### 1. Languages
