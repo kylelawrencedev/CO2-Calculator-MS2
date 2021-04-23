@@ -209,6 +209,7 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 * [JSHint](https://jshint.com/)
 * [W3C HTML Validator](https://validator.w3.org/)
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+* [Balsamiq](https://balsamiq.com/)
 ---
 ## **Credits**
 * [Greta quote](https://www.brainyquote.com/quotes/greta_thunburg_1088216?src=t_emissions) 
