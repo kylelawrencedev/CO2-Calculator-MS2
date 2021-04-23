@@ -69,7 +69,7 @@ hideCalculator(calculatorDisplay);
 //Uses the distance from input to calcute Co2 output for a journey using either petrol/diesel or km/mi as other options. 
 // userDistance gets the value of the number the user put into the input field
 function calculateCarbon() {
-    const CARBON_RESULT = document.querySelector('#carbonResult')
+    const CARBON_RESULT = document.querySelector('#carbonResult');
     let userDistance = parseInt(document.getElementById("totalDistance").value);
     CARBON_RESULT.innerHTML = `<div class='userCalculator'>${(userDistance * document.getElementById('inlineFormCustomSelectPref').value * document.getElementById('inlineFormCustomSelectPref1').value).toFixed(2)} kg of CO<sub>2</sub></div>`;
 }
