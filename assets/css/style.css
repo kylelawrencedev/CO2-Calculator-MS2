@@ -460,6 +460,11 @@ input {
         padding: 5px;
     }
 }
+@media (max-width: 420px) {
+    .carousel-caption {
+        left: 3.25rem;
+    }
+}
 @media (max-width:400px) {
 .offset-program-section {
         height: 295px;
