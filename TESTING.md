@@ -41,7 +41,7 @@ Error for usings lists when not needed for the calculator button
 Error for putting loading='lazy'
 * Put loading='lazy' into the div below the image by accident. Moved it to the img
 Got a error for the social links in the footer
-* I had put all the social media icons into a '<ul></ul>' and then put another '<ul></ul>' inside the first which is not allowed. I had to put the first three icons into a unordered list and the next three into their own unordered list. With '<li></li>' within each unordered list 3 times.
+* I had put all the social media icons into a 'ul' and then put another 'ul' inside the first which is not allowed. I had to put the first three icons into a unordered list and the next three into their own unordered list. With 'li' within each unordered list 3 times.
 #### CSS
 All code passed without any changes needed
 ### JSHint 
