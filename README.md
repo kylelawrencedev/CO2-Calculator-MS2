@@ -22,9 +22,9 @@ with a simple subscription. Millions of people have subscriptions to Amazon and 
 ---
 ## **Wireframes**
 ### Desktop
-![Wireframes for desktop]()
+[Wireframes for desktop](docs/wireframes/co2-calculator-desktop-wireframes.png)
 ### Mobile
-![Wireframes for mobile]()
+[Wireframes for mobile](docs/wireframes/co2-calculator-mobile-wireframes.png)
 ___
 ## **Typography & Color Scheme**
 ### Typography
