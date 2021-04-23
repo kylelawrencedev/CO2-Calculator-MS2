@@ -21,6 +21,9 @@ that cost a certain amount each month and this means that person does not need t
 This site is intended to start a persons journey to helping the environment and opening their eyes to new ways to help the environment.
 with a simple subscription. Millions of people have subscriptions to Amazon and Netflix, but these subscriptions help our planet.
 
+## **Target Audience**
+People looking to get a better understanding on the impact they are having on the planet.
+
 ---
 ## **Wireframes**
 ### Desktop
@@ -114,29 +117,35 @@ Chose B612 due to it look formal yet still playful with some curves. Letters are
 A paragraph introducing the calculator with a brief explanation on our impact on the planet.
 
 **CO2 Calculator**
+#### Hidden Calculators
+When the users comes to the site the Google maps calculator will be showing, with a button that the user presses to hide the Google maps calculator and show the distance calculator
+#### User Distance Calculator
+* Middle : Dropdown menu for the user to select their fuel type, the two options will be petrol and diesel.
 
-* Left Side : Dropdown menu for the user to select their fuel type, the two options will be petrol and diesel.
+* Middle: Below the fuel type will be a text area that shows the CO2 per mile of the selected fuel.
+#### Google Maps Calculator
+* Middle : In line with fuel type will be 'Start Location', the user will input their start location in this area.
 
-* Left Side : Below the fuel type will be a text area that shows the CO2 per mile of the selected fuel.
+* Middle: Below 'Start Location' will be 'End Location', the user will input where their journey will end.
 
-* Right Side : In line with fuel type will be 'Start Location', the user will input their start location in this area.
-
-* Right Side : Below 'Start Location' will be 'End Location', the user will input where their journey will end.
-
-* Middle : Below these 4 elements will be a 'Submit' button.
+* Middle : Below both calculators  will be a 'Submit' button.
 
 **Google Maps**
 
 This will show the Google Directions API, the input from the Start and End locations will be shown here with the route showing. 
 
 **Calculator Results**
+#### User Distance Calculator
+* Middle : 'Total CO2 for Trip' will be showed between fuel type dropdown and the submit button
 
-* Middle : 'Trip Distance' will be shown below the google maps.
+#### Google Maps Calculator
+* Middle : A summary of the users route will be displayed above Google maps. Showing origin and destination, time and distance
 
-* Middle : 'Total CO2 for Trip' is below 'Trip Distance'. This shows the total CO2 emitted from the trip.
+* Middle : 'Total CO2 for Trip' is below Google Maps. This shows the total CO2 emitted from the trip.
 
 **CO2 Emissions Offsetting Initiatives**
 
+#### *See Design Changes for new way this section is done*
 *Desktop :*
 * Left Side : All the logos for selected offsetting initiatives will be shown, the logos when clicked will link to the website.
 
@@ -148,14 +157,15 @@ This will show the Google Directions API, the input from the Start and End locat
 an accordion of all the text explaining the initiative. Link will be shown at the end of the text to the website.
 
 **Footer**
+#### *See Design Changes for new way this section is done*
 * Right Side : All social media links
 
 ---
 ### Design Changes
 * Users can now change between two calculators. One calculator for when they know their origin and destination and another for when they want to see their CO2 emissions for certain distances.
 * Users can select Distance type and Fuel type only for one of the calculators. 
-* Offset iniatives displayed on a carousel, with content being hidden on smaller devices.
-* Social Media icons moved to middle of screen.
+* CO2 Emissions Offsetting Initiatives : Offset iniatives displayed on a carousel, with content being hidden on smaller devices.
+* Footer : Social Media icons moved to middle of screen.
 * Header becomes transparent when the user scrolls down
 
 ## **Future Features**
