@@ -22,9 +22,9 @@ with a simple subscription. Millions of people have subscriptions to Amazon and 
 ---
 ## **Wireframes**
 ### Desktop
-![Wireframes for desktop](assets/wireframes/co2-calculator-desktop-wireframes.png)
+![Wireframes for desktop]()
 ### Mobile
-![Wireframes for mobile](assets/wireframes/co2-calculator-mobile-wireframes.png)
+![Wireframes for mobile]()
 ___
 ## **Typography & Color Scheme**
 ### Typography
@@ -167,6 +167,28 @@ than electricity sourced from coal.
 1. Offer visitors the option to open their own account. This account will allow them to save their trips. Once a trip is saved
 the total CO2 emissions from that trip is stored and when another trip is saved the CO2 emissions from both trips are added together.
 The total emissions from all the user’s trips are shown at the bottom of the users account page with the saved trips.
+
+---
+## Deployment 
+ When on GitHub navigate to [CO2-Calculator-MS2](https://github.com/kylelawrencedev/CO2-Calculator-MS2) repository. Once at the repository under the name will be 'Settings', which must be clicked.
+* When on the settings pages, Start to scroll down.
+* While scrolling look out for the heading "Pages"
+* Under the heading click on the drop-down menu under source. 
+* In the dropdown menu select either 'None' or 'Branch' as your publishing source.
+* Once selected, you can select a folder for your publishing source. This can be either "/(root)" or "/docs".
+* Then click save.
+
+"If you choose the /docs folder on any branch as your publishing source, then later remove the /docs folder from that branch in your repository, your site won't build and you'll get a page build error message for a missing /docs folder." 
+[Configuring a publishing source](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+# Cloning my repository
+
+* Go to [CO2-Calculator-MS2](https://github.com/kylelawrencedev/CO2-Calculator-MS2) repository
+* Above where all the files are listed there will be a button that says "Code"
+* When clicked a drop-down menu will appear. 
+* Click on "Open with GitHub Desktop"
+
+[Cloning a repository from GitHub to GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop)
 ## **Technology**
 
 ---
