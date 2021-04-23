@@ -18,7 +18,7 @@ Some sites that I have seen show the total cost of the trip and then show what t
 can by to offset their single trip. I think this is the wrong way to go about it because this means that person. 
 now needs to keep coming back and calculating each trip they take. I have tried to find websites that offer subscriptions.
 that cost a certain amount each month and this means that person does not need to constantly worry about calculating each trip.
-This site is intended to start a persons journey to helping the environment and opening their eyes to new ways to help the environment.
+This site is intended to start a person’s journey to helping the environment and opening their eyes to new ways to help the environment.
 with a simple subscription. Millions of people have subscriptions to Amazon and Netflix, but these subscriptions help our planet.
 
 ## **Target Audience**
@@ -32,7 +32,7 @@ People looking to get a better understanding on the impact they are having on th
 [Wireframes](docs/wireframes/co2-calculator-mobile-wireframes.png) for mobile
 
 ---
-## **Typography & Color Scheme**
+## **Typography & Colour Scheme**
 ### Typography
 
 1. Main Font - B612
@@ -42,11 +42,11 @@ People looking to get a better understanding on the impact they are having on th
 Chose B612 due to it look formal yet still playful with some curves. Letters are rigged and sharp with a little flick at the end of letters such as 'l' & 't' and the slight curve at the top of the letter 'i' made this font stand out to me.
 
 ---
-### Color Scheme - Dark mode
+### Colour Scheme - Dark mode
 **Header:** 
-* Background Color - 65CCB8
+* Background Colour - 65CCB8
 
-* Font Color - 182628
+* Font Colour - 182628
 
 **Body:**
 
@@ -56,23 +56,23 @@ Chose B612 due to it look formal yet still playful with some curves. Letters are
 
 * Calculator Background - 3B945E
 
-* Calculator Header Font Color - F2F2F2
+* Calculator Header Font Colour - F2F2F2
 
 * Calculator Fuel type, co2 per mile, start and end location Background Color - F2F2F2
 
-* Calculator Results DIV Font Color - F2F2F2
+* Calculator Results DIV Font Colour - F2F2F2
 
 **Footer**
 
-* Background Color - 182628
+* Background Colour - 182628
 
-* Contact Us and Social Links Color - 65CCB8
+* Contact Us and Social Links Colour - 65CCB8
 ---
-### Color Scheme - Light mode
+### Colour Scheme - Light mode
 **Header** 
-* Background Color - F2F2F2
+* Background Colour - F2F2F2
 
-* Font Color - 182628
+* Font Colour - 182628
 
 **Body:**
 * First Paragraph & Emissions Offsetting links - 3B945E
@@ -81,18 +81,18 @@ Chose B612 due to it look formal yet still playful with some curves. Letters are
 
 * Calculator Background - F2F2F2
 
-* Calculator Header Font Color - 182628
+* Calculator Header Font Colour - 182628
 
 * Calculator Fuel type, co2 per mile, start and end location Background Color - 3B945E
 
 * Calculator Fuel type, co2 per mile, start and end location Font Color - F2F2F2
 
-* Calculator Results DIV Font Color - 182628
+* Calculator Results DIV Font Colour - 182628
 
 **Footer**
-* Background Color - 3B945E
+* Background Colour - 3B945E
 
-* Contact Us and Social Links Color - F2F2F2
+* Contact Us and Social Links Colour - F2F2F2
 ---
 ## **User Stories**
 * As a user I want to view a map showing my trip from point A to point B.
@@ -110,7 +110,7 @@ Chose B612 due to it look formal yet still playful with some curves. Letters are
 
 * CO2 Calculator Logo on the left, when clicked will link back to home page.
 
-* Dark and Light mode toggle switch on the right of the header. Lets user switch the color theme from a dark theme to a light theme.
+* Dark and Light mode toggle switch on the right of the header. Let’s user switch the color theme from a dark theme to a light theme.
 
 **Calculator Introduction**
 
@@ -118,7 +118,7 @@ A paragraph introducing the calculator with a brief explanation on our impact on
 
 **CO2 Calculator**
 #### Hidden Calculators
-When the users comes to the site the Google maps calculator will be showing, with a button that the user presses to hide the Google maps calculator and show the distance calculator
+When the users come to the site the Google maps calculator will be showing, with a button that the user presses to hide the Google maps calculator and show the distance calculator
 #### User Distance Calculator
 * Middle : Dropdown menu for the user to select their fuel type, the two options will be petrol and diesel.
 
@@ -183,14 +183,14 @@ The total emissions from all the user’s trips are shown at the bottom of the u
 ---
 ## Deployment 
  When on GitHub navigate to [CO2-Calculator-MS2](https://github.com/kylelawrencedev/CO2-Calculator-MS2) repository. Once at the repository under the name will be 'Settings', which must be clicked.
-* When on the settings pages, Start to scroll down.
+* When on the settings pages, start to scroll down.
 * While scrolling look out for the heading "Pages"
 * Under the heading click on the drop-down menu under source. 
 * In the dropdown menu select either 'None' or 'Branch' as your publishing source.
 * Once selected, you can select a folder for your publishing source. This can be either "/(root)" or "/docs".
 * Then click save.
 
-"If you choose the /docs folder on any branch as your publishing source, then later remove the /docs folder from that branch in your repository, your site won't build and you'll get a page build error message for a missing /docs folder." 
+"If you choose the /docs folder on any branch as your publishing source, then later remove the /docs folder from that branch in your repository, your site won't build, and you'll get a page build error message for a missing /docs folder." 
 [Configuring a publishing source](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## Cloning my repository
